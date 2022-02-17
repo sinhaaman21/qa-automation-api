@@ -1,0 +1,9 @@
+{
+  "name": "TestAPI",
+  "greeting_enabled": true,
+  "greeting_message": "Hi test user",
+  "channel": {
+    "website_url": "acme.inc",
+    "type": "web_widget"
+  }
+}

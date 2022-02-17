@@ -1,0 +1,11 @@
+{
+    "senderName":"Aman",
+    "deliveryStatus":"sent",
+    "direction":"FROM_STORE",
+    "event":"message:user:in",
+    "platformSenderId":"+917299869181",
+    "platformTimestamp":"2022-01-17T14:32:43Z",
+    "text":"Hello",
+    "type":"text",
+    "id":"123"
+}

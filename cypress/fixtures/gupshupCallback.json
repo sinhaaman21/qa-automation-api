@@ -1,0 +1,20 @@
+{
+    "app":"testQA",
+    "timestamp":1626792741577,
+    "version":2,
+    "type":"message",
+    "payload":{
+        "id":"ABEGkXNVYCQJAhBYvUTAR74RKvGGN0D8846D",
+        "source":"917299869111",
+        "type":"text",
+        "payload":{
+            "text":"HellonewGupshup"
+        },
+        "sender":{
+            "phone":"917299869111",
+            "name":"amansinha",
+            "country_code":"91",
+            "dial_code":"7299869111"
+        }
+    }
+}

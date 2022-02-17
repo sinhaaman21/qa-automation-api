@@ -1,0 +1,13 @@
+{
+  "short_code": "tmc_text_ctabtn_1QAAAA",
+  "content": "Dear {}, This is to inform you that we have reserved your products for 48 hrs in the cart {}. If you are facing problems with log in, purchase or payment, reach out to us.",
+  "inbox_id": "97",
+  "template_attributes": {
+    "buttons": [
+      {
+        "name": "Complete purchase",
+        "value": "https://shopify.limechat.ai/UPrlZs"
+      }
+    ]
+  }
+}

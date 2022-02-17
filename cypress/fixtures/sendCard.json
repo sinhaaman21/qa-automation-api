@@ -1,0 +1,23 @@
+{
+  "content": "Hello Sure, book a call here https://calendly.com/nikhita-1/15min What would you like to do next? (To choose an option, enter the number corresponding to your choice 👇)",
+  "content_type": "input_select",
+  "content_attributes": {
+      "items": [
+          {
+              "payload": "/affirm",
+              "title": "Sure"
+          },
+          {
+              "payload": "/deny",
+              "title": "Skip"
+          },
+          {
+              "payload": "/test",
+              "title": "One More"
+          }
+      ],
+      "wap_smart_message": "\ud83d\udca1Type '*menu*' to come back to this menu at any time",
+      "buttonType": "default",
+      "wap_inter_button_title": ""
+  }
+}
