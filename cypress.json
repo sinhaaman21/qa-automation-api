@@ -1,9 +1,10 @@
 {
+    "projectId": "62ue1e",
     "db": {
         "user": "postgres",
         "password": "wavicle123",
         "host": "localhost",
         "database": "chatwoot_production",
-        "port":54323
+        "port": 54323
     }
 }
