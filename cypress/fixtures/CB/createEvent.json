@@ -1,0 +1,17 @@
+{
+    "event_type": "order_test",
+    "data": {
+        "phone": 9517555832,
+        "user_identity": 24,
+        "name": "Simran Singh",
+        "email": "test@test.com",
+        "first_name": "order start",
+        "checkout_id": 86,
+        "order_id": 45,
+        "ts": 1644404898,
+        "order": [
+            "test1",
+            "test2"
+        ]
+    }
+}
