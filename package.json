@@ -8,10 +8,10 @@
     "allure:clear": "if exist allure-results rmdir /q /s allure-results && if exist allure-report rmdir /q /s allure-report && if exist cypress\\screenshots rmdir /q /s cypress\\screenshots && if exist cypress\\videos rmdir /q /s cypress\\videos",
     "pretest": "npm run allure:clear",
     "posttest": "npm run allure:report",
-    "e2e": "npx cypress run --record --key b2c0e80c-6cfd-442c-b412-0ee5759d27a0",
+    "e2e": "npx cypress run --headless --record --key b2c0e80c-6cfd-442c-b412-0ee5759d27a0",
     "ci": "npm install cypress --save-dev",
     "start:ci": "my-server -p 3030",
-    "cy:run": "cypress run",
+    "cy:run": "cypress run --headless",
     "test": "start-server-and-test start http://localhost:3030 cy:run"
   },
   "author": "Aman Sinha",
