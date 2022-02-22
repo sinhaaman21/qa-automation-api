@@ -10,7 +10,7 @@
     "posttest": "npm run allure:report",
     "e2e": "npx cypress run --record --key b2c0e80c-6cfd-442c-b412-0ee5759d27a0",
     "ci": "npm install cypress --save-dev",
-    "start": "my-server -p 3030",
+    "start:ci": "my-server -p 3030",
     "cy:run": "cypress run",
     "test": "start-server-and-test start http://localhost:3030 cy:run"
   },
