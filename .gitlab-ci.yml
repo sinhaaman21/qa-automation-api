@@ -12,4 +12,4 @@ test:
     # start the server in the background
     - npm run start:ci &
     # run Cypress tests
-    - npx cypress run --record --key b2c0e80c-6cfd-442c-b412-0ee5759d27a0
+    - npm run e2e
