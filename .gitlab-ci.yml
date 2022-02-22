@@ -19,12 +19,16 @@ cache:
 install:
   image: cypress/browsers:node12.14.1-chrome85-ff81
   stage: build
+  tags: 
+    - awsgitrunner
   script:
     - npm ci
 
 ui-chrome-tests:
   image: cypress/browsers:node12.14.1-chrome85-ff81
   stage: test
+  tags: 
+    - awsgitrunner
   parallel: 5
   script:
     # install dependencies
