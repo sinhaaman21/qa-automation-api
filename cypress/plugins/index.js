@@ -45,3 +45,13 @@ module.exports = on => {
       dbQuery:(query)=> require("cypress-postgres")(query.query,query.connection)
   });
 };
+
+var Xvfb = require('xvfb');
+var options = {}; // optional
+var xvfb = new Xvfb(options);
+xvfb.start(function(err, xvfbProcess) {
+  // code that uses the virtual frame buffer here
+  xvfb.stop(function(err) {
+    // the Xvfb is stopped
+  });
+});
