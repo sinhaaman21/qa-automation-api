@@ -2,7 +2,7 @@ stages:
   - test
 
 test:
-  image: cypress/included:9.5.0
+  image: cypress/browsers:node16.13.0-chrome95-ff94
   stage: test
   tags: 
     - awsgitrunner
