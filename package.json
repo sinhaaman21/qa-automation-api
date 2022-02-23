@@ -15,7 +15,6 @@
     "start": "my-server -p 3030 --https",
     "cy:run": "cypress run",
     "cy:ci": "START_SERVER_AND_TEST_INSECURE=1 start-server-and-test start https-get://localhost:3030 cy:run"
-    
   },
   "author": "Aman Sinha",
   "license": "ISC",
@@ -30,6 +29,7 @@
   "dependencies": {
     "allure-commandline": "^2.17.2",
     "cypress-postgresql": "^1.0.8",
-    "pg": "^8.7.1"
+    "pg": "^8.7.1",
+    "xvfb": "^0.4.0"
   }
 }
