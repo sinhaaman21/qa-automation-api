@@ -14,7 +14,8 @@
     "test": "start-server-and-test start http://localhost:3030 cy:run",
     "start": "my-server -p 3030 --https",
     "cy:run": "cypress run",
-    "cy:ci": "START_SERVER_AND_TEST_INSECURE=1 start-server-and-test start https-get://localhost:3030 cy:run"  },
+    "cy:ci": "START_SERVER_AND_TEST_INSECURE=1 start-server-and-test start https-get://localhost:3030 cy:run"
+  },
   "author": "Aman Sinha",
   "license": "ISC",
   "devDependencies": {

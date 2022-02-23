@@ -3,7 +3,7 @@
     "db": {
         "user": "postgres",
         "password": "wavicle123",
-        "host": "localhost",
+        "host": "limechat-stg-rds.cn0rotjyqknw.ap-south-1.rds.amazonaws.com",
         "database": "chatwoot_production",
         "port": 54323
     }
