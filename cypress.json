@@ -5,6 +5,7 @@
         "password": "wavicle123",
         "host": "limechat-stg-rds.cn0rotjyqknw.ap-south-1.rds.amazonaws.com",
         "database": "chatwoot_production",
-        "port": 54323
+        "port": 5432
     }
 }
+
