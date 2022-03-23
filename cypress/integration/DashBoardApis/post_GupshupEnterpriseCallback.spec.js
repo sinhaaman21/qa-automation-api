@@ -1,5 +1,5 @@
 /// <reference types = "Cypress" />
-const {host, dashboardApiAccessToken} = require('../../support/constant');
+const {host, dashboardApiAccessToken,accountsIdQA} = require('../../support/constant');
 const payload = require('../../fixtures/gupshupEnterpriseCallback.json');
 import { randomTextFunction }  from '../../support/commonMethods';
 
@@ -26,13 +26,13 @@ describe ('post message to gupshupEnterprise ', ()=>{
             }
 
         }).then((res)=>{
-            cy.log(JSON.stringify(res))
+            //cy.log(JSON.stringify(res))
             expect(res.status).to.eq(204)
-            cy.task("dbQuery", {
-                "query": `select content from messages where account_id = '27' and content like '%QA_HelloGE';`
-            }).then(queryResponse => {
-                expect(JSON.stringify(queryResponse)).to.contains(text)
-            });
+            // cy.task("dbQuery", {
+            //     "query": `select content from messages where account_id = ${accountsIdQA} and content like '%QA_HelloGE';`
+            // }).then(queryResponse => {
+            //     expect(JSON.stringify(queryResponse)).to.contains(text)
+            // });
         })
 
     })

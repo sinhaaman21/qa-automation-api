@@ -2,7 +2,7 @@
   "first_name": "TestQAAutomation",
   "email": "test.qa@limechat.ai",
   "phone": "917299869181",
-  "template_id": 21, 
+  "template_id": 1, 
   "label": "order-confirmation", 
   "status": "open",
   "additional_attributes": {

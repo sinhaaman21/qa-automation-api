@@ -1,5 +1,5 @@
 /// <reference types = "Cypress" />
-const { host, accountsIdQA, dashboardApiAccessToken } = require('../../support/constant');
+const { host, accountsIdQA, dashboardApiAccessToken, connection_dashboard } = require('../../support/constant');
 const payload = require('../../fixtures/createInbox.json');
 import { randomTextFunction } from '../../support/commonMethods';
 
@@ -26,7 +26,7 @@ describe('post inbox ', () => {
             }
 
         }).then((res) => {
-            cy.log(JSON.stringify(res))
+            //cy.log(JSON.stringify(res))
             expect(res.status).to.eq(200)
             expect(res.body.status).to.eq(1)
             expect(res.body.name).to.eq(name)
@@ -35,7 +35,7 @@ describe('post inbox ', () => {
             const id = res.body.id
             cy.log(`inbox id created and now deleting ${id} and ${name}`);
             cy.task("dbQuery", { 
-                "query": `select name from inboxes where id = ${id}` 
+                "query": `select name from inboxes where id = ${id};` 
             }).then(queryResponse => {
                 expect(JSON.stringify(queryResponse)).to.contains(name)
             });

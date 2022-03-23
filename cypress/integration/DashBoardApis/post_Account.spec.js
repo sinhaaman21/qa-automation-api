@@ -23,7 +23,7 @@ describe ('createAccount ', ()=>{
             }
 
         }).then((res)=>{
-            cy.log(JSON.stringify(res));
+            //cy.log(JSON.stringify(res));
             expect(res.status).to.eq(200);
             cy.task("dbQuery", {
                 "query": `select name from accounts where name = '${accountName}';`

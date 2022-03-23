@@ -1,5 +1,5 @@
 /// <reference types = "Cypress" />
-const { hostLimeKit } = require('../../support/constant');
+const { hostFlowBuilder } = require('../../support/constant');
 const payload = require('../../fixtures/CB/signUp.json');
 import { randomTextFunction } from '../../support/commonMethods';
 
@@ -10,26 +10,22 @@ describe('signUp ', () => {
         const email = randomTextFunction('CBQA@test.com');
         cy.request({
             method: 'POST',
-            url: `${hostLimeKit}/campaign_builder/v1/auth/sign_up`,
+            url: `https://flow-builder-stg.limechat.ai/auth/sign_up`,
             headers: {
                 //'x-limechat-access-token' : "a1"
             },
             body: {
                 "email": email,
                 "password": payload.password,
-                "password2": payload.password2
+                "confirm_password": payload.confirm_password,
+                "name" : payload.name,
+                "company": payload.company
             }
 
         }).then((res) => {
-            cy.log(JSON.stringify(res));
+            //cy.log(JSON.stringify(res));
             expect(res.status).to.eq(201);
             expect(res.body.success).to.eq(true);
-            // cy.task("dbQuery", {
-            //     "query": `select name from accounts where name = '${accountName}';`
-            // }).then(queryResponse => {
-            //     expect(JSON.stringify(queryResponse)).to.contains(accountName)
-            // });
-
         })
 
     })

@@ -21,10 +21,10 @@ describe('Attendance ', () => {
             }
 
         }).then((res) => {
-            cy.log(JSON.stringify(res))
-            expect(res.status).to.eq(200)
-            expect(res.body[0].id).to.eq(7)
-            expect(res.body[0].name).to.eq("Vikas Johari")
+            //cy.log(JSON.stringify(res))
+            expect(res.status).to.eq(204)
+            // expect(res.body[0].id).to.eq(7)
+            // expect(res.body[0].name).to.eq("Vikas Johari")
         })
 
     })

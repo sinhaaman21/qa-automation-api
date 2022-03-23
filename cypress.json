@@ -4,7 +4,7 @@
         "user": "postgres",
         "password": "wavicle123",
         "host": "limechat-stg-rds.cn0rotjyqknw.ap-south-1.rds.amazonaws.com",
-        "database": "chatwoot_production",
+        "database": "limechat_db",
         "port": 5432
     }
 }

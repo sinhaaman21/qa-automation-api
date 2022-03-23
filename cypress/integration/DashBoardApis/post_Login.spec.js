@@ -21,7 +21,7 @@ describe('login ', () => {
             }
 
         }).then((res) => {
-            cy.log(JSON.stringify(res));
+            //cy.log(JSON.stringify(res));
             expect(res.status).to.eq(200);
             expect(res.body.data.uid).to.eq(payload.email);
             const id = res.body.data.id;

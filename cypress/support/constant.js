@@ -1,13 +1,32 @@
 const host = `https://stgapp.limechat.ai`;
-const hostLimeKit = `https://limekit-stgapp.limechat.ai`
-const accountsIdQA = 27;
-const conversationsId = `1`; 
-const dashboardApiAccessToken = `878d5e45be26a2010d7bbdf13bce4a7e3082804e78f862b1dd41572aabfd2ac1`;
-
+const hostLimeKit = `https://limekit-stgapp.limechat.ai`;
+const hostFlowBuilder = `https://flow-builder-stg.limechat.ai/builder/v1`;
+const accountsIdQA = 61;
+const conversationsId = `3`;
+const dashboardApiAccessToken = `QNL4t1EA3qzoZhDhVieUDjmz`;
+let connection_flow_builder = {
+    user: "postgres",
+    password: "wavicle123",
+    port: 5432,
+    //host: "localhost",
+    host: "limechat-stg-rds.cn0rotjyqknw.ap-south-1.rds.amazonaws.com",
+    database: "flow_builder_django"
+};
+let connection_dashboard = {
+    user: "postgres",
+    password: "wavicle123",
+   // host: "localhost",
+    host : "limechat-stg-rds.cn0rotjyqknw.ap-south-1.rds.amazonaws.com",
+    database: "chatwoot_production",
+    port: 5432
+}
 export default {
     host,
     hostLimeKit,
     accountsIdQA,
     conversationsId,
-    dashboardApiAccessToken
+    dashboardApiAccessToken,
+    connection_flow_builder,
+    hostFlowBuilder,
+    connection_dashboard
 };

@@ -1,0 +1,43 @@
+{
+    "name": "test QA",
+    "desc": "test QA Automation",
+    "trigger_event": "order_created",
+    "filters": [
+      {
+        "type": "no_other_order"
+      },
+      {
+        "type": "no_other_checkout"
+      }
+    ],
+    "dnd_enabled": false,
+    "dnd_start_time": "20:00",
+    "dnd_duration": "12:00:00",
+    "test_mode_enabled": false,
+    "test_mode_numbers": [
+      "1234567890",
+      "2123456789"
+    ],
+    "start_node_id": "6020ea2b-a94b-4ad1-9e6b-8bd91bc33826",
+    "flow_graph": {
+      "6020ea2b-a94b-4ad1-9e6b-8bd91bc33826": {
+        "type": "time_delay",
+        "delay": "00 00:01:45",
+        "nextNode": "09e9a181-3061-4aaa-b709-6d16ecefa86e"
+      },
+      "09e9a181-3061-4aaa-b709-6d16ecefa86e": {
+        "type": "whatsapp_message",
+        "template_id": 1,
+        "template_substitutions": [
+          {
+            "type": "data_field",
+            "field_name": "first_name"
+          }
+        ]
+      }
+    }
+  }
+  
+  
+  
+  

@@ -1,0 +1,21 @@
+{
+  "name": "test",
+  "is_active": true,
+  "trigger_event": "order_created",
+  "filters": [
+    {
+      "type": "no_other_order"
+    },
+    {
+      "type": "no_other_checkout"
+    }
+  ],
+  "dnd_enabled": true,
+  "dnd_start_time": "20:00",
+  "dnd_duration": "12:00:00",
+  "test_mode_enabled": true,
+  "test_mode_numbers": [
+    "1234567890",
+    "2123456789"
+  ]
+}

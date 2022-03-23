@@ -13,7 +13,7 @@ describe('get inbox list', () => {
                 'api_access_token': dashboardApiAccessToken
             }
         }).then((res) => {
-            cy.log(JSON.stringify(res));
+            //cy.log(JSON.stringify(res));
             expect(res.status).to.eq(200)
             for (let i = 0; i < res.body.payload.length; i++) {
                 // cy.log(res.body.payload[i].name );

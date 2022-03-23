@@ -27,7 +27,7 @@ describe('Post Notification', () => {
                 "template_attributes": payload.template_attributes //comma separated array of parameters for each input box in template
             }
         }).then((res)=>{
-            cy.log(JSON.stringify(res));
+            //cy.log(JSON.stringify(res));
             expect(res.status).to.eq(200);
             expect(res.body.status).to.eq('success');
         })

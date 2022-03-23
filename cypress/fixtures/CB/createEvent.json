@@ -1,17 +1,13 @@
 {
-    "event_type": "order_test",
+    "event_type": "order_created",
+    "user_identity": "string1",
+    "phone": "911234567890",
+    "ts": 1645706775,
     "data": {
-        "phone": 9517555832,
-        "user_identity": 24,
-        "name": "Simran Singh",
+        "name": "John Doe",
         "email": "test@test.com",
         "first_name": "order start",
         "checkout_id": 86,
-        "order_id": 45,
-        "ts": 1644404898,
-        "order": [
-            "test1",
-            "test2"
-        ]
+        "order_id": 45
     }
 }

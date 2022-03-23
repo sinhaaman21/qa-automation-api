@@ -6,7 +6,7 @@ describe('send card', () => {
     it('post send card', () => {
         cy.request({
             method: 'POST',
-            url: `${host}/api/v1/accounts/${accountsIdQA}/conversations/10/messages`,
+            url: `${host}/api/v1/accounts/${accountsIdQA}/conversations/1/messages`,
             headers: {
                 'api_access_token': dashboardApiAccessToken
             },
@@ -22,7 +22,7 @@ describe('send card', () => {
                 }
             }
         }).then((res) => {
-            cy.log(JSON.stringify(res));
+            //cy.log(JSON.stringify(res));
             expect(res.status).to.eq(200);
             expect(res.body.status).to.eq('success');
         })
