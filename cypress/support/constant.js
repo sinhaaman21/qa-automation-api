@@ -8,6 +8,7 @@ let connection_flow_builder = {
     user: "postgres",
     password: "wavicle123",
     port: 5432,
+    //port: 54323,
     //host: "localhost",
     host: "limechat-stg-rds.cn0rotjyqknw.ap-south-1.rds.amazonaws.com",
     database: "flow_builder_django"
@@ -15,10 +16,12 @@ let connection_flow_builder = {
 let connection_dashboard = {
     user: "postgres",
     password: "wavicle123",
-   // host: "localhost",
+    // host: "localhost",
     host : "limechat-stg-rds.cn0rotjyqknw.ap-south-1.rds.amazonaws.com",
     database: "chatwoot_production",
     port: 5432
+    //port: 54323,
+
 }
 export default {
     host,
