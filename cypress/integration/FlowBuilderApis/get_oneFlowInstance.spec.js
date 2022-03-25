@@ -1,5 +1,5 @@
 /// <reference types = "Cypress" />
-const {hostFlowBuilder, connection_flow_builder} = require('../../support/constant');
+const {hostFlowBuilder, connection_flow_builder, flowInstanceID} = require('../../support/constant');
 const payload = require('../../fixtures/CB/createEvent.json');
 import {randomTextFunction} from '../../support/commonMethods';
 
@@ -9,7 +9,7 @@ describe ('get one Flow instance', ()=>{
       
         cy.request({
             method : 'GET',
-            url : `${hostFlowBuilder}/flow_instance/21`,
+            url : `${hostFlowBuilder}/flow_instance/${flowInstanceID}`,
             headers : {
                 'x-limechat-access-token' : "a1"
             }

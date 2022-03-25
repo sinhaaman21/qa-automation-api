@@ -1,5 +1,5 @@
 /// <reference types = "Cypress" />
-const { hostFlowBuilder, connection_flow_builder } = require('../../support/constant');
+const { hostFlowBuilder, connection_flow_builder, flowId } = require('../../support/constant');
 const payload = require('../../fixtures/CB/patchFlow.json');
 import { randomTextFunction } from '../../support/commonMethods';
 
@@ -11,7 +11,7 @@ describe('update flow ', () => {
        
         cy.request({
             method: 'PATCH',
-            url: `${hostFlowBuilder}/flow/22`,
+            url: `${hostFlowBuilder}/flow/${flowId}`,
             headers: {
                 'x-limechat-access-token': "a1"
             },
@@ -33,7 +33,7 @@ describe('update flow ', () => {
             expect(res.body.success).to.eq(true);
             const name = res.body.result.name
             cy.task("dbQuery", {
-                "query": `select name from builder_flow where id = '22';`,
+                "query": `select name from builder_flow where id = ${flowId};`,
                 "connection": connection_flow_builder
             }).then(queryResponse => {
                 expect(JSON.stringify(queryResponse)).to.contains(name)

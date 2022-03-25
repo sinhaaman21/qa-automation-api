@@ -1,5 +1,5 @@
 /// <reference types = "Cypress" />
-const {hostFlowBuilder, connection_flow_builder} = require('../../support/constant');
+const {hostFlowBuilder, connection_flow_builder, flowId} = require('../../support/constant');
 
 
 describe ('get one flow ', ()=>{
@@ -8,7 +8,7 @@ describe ('get one flow ', ()=>{
       
         cy.request({
             method : 'GET',
-            url : `${hostFlowBuilder}/flow/23`,
+            url : `${hostFlowBuilder}/flow/${flowId}`,
             headers : {
                 'x-limechat-access-token' : "a1"
             }

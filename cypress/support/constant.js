@@ -3,6 +3,8 @@ const hostLimeKit = `https://limekit-stgapp.limechat.ai`;
 const hostFlowBuilder = `https://flow-builder-stg.limechat.ai/builder/v1`;
 const accountsIdQA = 61;
 const conversationsId = `3`;
+const flowId = `36`;
+const flowInstanceID = `369`
 const dashboardApiAccessToken = `QNL4t1EA3qzoZhDhVieUDjmz`;
 let connection_flow_builder = {
     user: "postgres",
@@ -31,5 +33,7 @@ export default {
     dashboardApiAccessToken,
     connection_flow_builder,
     hostFlowBuilder,
-    connection_dashboard
+    connection_dashboard,
+    flowId,
+    flowInstanceID
 };
