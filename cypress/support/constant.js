@@ -13,10 +13,10 @@ const limeKitToken_Ac_71_prod = `kJLKezZK99yzAb2k3RSoScEZ5iUGTr`; //WowSkinScien
 let connection_flow_builder = {
     user: "postgres",
     password: "wavicle123",
-    port: 5432,
-    //port: 54323,
-    //host: "localhost",
-    host: "limechat-stg-rds.cn0rotjyqknw.ap-south-1.rds.amazonaws.com",
+    //port: 5432,
+    port: 54323,
+    host: "localhost",
+    //host: "limechat-stg-rds.cn0rotjyqknw.ap-south-1.rds.amazonaws.com",
     database: "flow_builder_django"
 };
 let connection_dashboard = {

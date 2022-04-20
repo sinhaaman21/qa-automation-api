@@ -19,9 +19,8 @@ describe('login ', () => {
 
         }).then((res) => {
             //cy.log(JSON.stringify(res));
-            expect(res.status).to.eq(201);
+            expect(res.status).to.eq(200);
             expect(res.body.success).to.eq(true);
-            
 
         })
 
