@@ -2,7 +2,10 @@ pipeline {
     agent{
         label 'limekit'
     } 
-    tools {nodejs "node"}
+    tools {
+        nodejs 'node'
+        allure 'allure'
+        }
 
     stages {
         stage('Dependencies') {
@@ -30,6 +33,7 @@ pipeline {
                 }
                 catch(e){
                     echo 'Caught: ${e}'
+                    currentBuild.result=='SUCCESS'
                 }
                 sh 'npm run posttest'
             }
