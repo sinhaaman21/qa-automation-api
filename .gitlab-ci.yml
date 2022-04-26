@@ -3,7 +3,7 @@ stages:
 
 test:
   ##image: node latest
-  image: cypress/included:9.5.0
+  ##image: cypress/included:9.5.0
   stage: test
   tags: 
     - awsgitrunner
