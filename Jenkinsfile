@@ -24,7 +24,12 @@ pipeline {
     }
     post{
         always{
-            sh 'npm run pretest'
+            try{
+                sh 'npm run pretest'
+            }
+            catch(e){
+                echo 'Caught: ${e}'
+            }
             sh 'npm run posttest'
         }
         success{
