@@ -35,7 +35,7 @@ pipeline {
                     echo 'Caught: ${e}'
                     currentBuild.result=='SUCCESS'
                 }
-                sh 'npm run posttest'
+                sh 'npm run mocha --reporter mocha-allure-reporter'
             }
         }
         success{
