@@ -11,7 +11,6 @@ pipeline {
         stage('Dependencies') {
             steps {
                 sh 'npm ci'
-                sh 'npm install --save-dev mocha-allure-reporter allure-commandline'
             }
         }
         stage('Initialize'){
@@ -34,6 +33,9 @@ pipeline {
         }
     }
     post{
+        always{
+            allure includeProperties: false, jdk: '', results: [[path: 'allure-results']]
+        }
         success{
             slackSend channel: 'jenkins-ci-notifier', color: '#22910C', message: "Build Success: \nProject: ${env.JOB_NAME}  \n Build Number: ${env.BUILD_NUMBER} \n Build URL: ${env.BUILD_URL}"
         }
