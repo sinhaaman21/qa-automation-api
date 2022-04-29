@@ -1,0 +1,339 @@
+{
+  "0b9bda5d8872024a15da460ce1fc28e6" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b58f93f8bb1d67e5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651212342844,
+        "stop" : 1651212343499,
+        "duration" : 655
+      }
+    } ]
+  },
+  "7a7cd806fc77486c8cd4a6a7cd324f45" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9f2ee9d29d56509",
+      "status" : "failed",
+      "statusDetails" : "`cy.task('dbQuery')` failed with the following error:\n\n> connect ECONNREFUSED 127.0.0.1:54323\n\nhttps://on.cypress.io/api/task",
+      "time" : {
+        "start" : 1651212300588,
+        "stop" : 1651212301613,
+        "duration" : 1025
+      }
+    } ]
+  },
+  "cedf1341ed9875c5a71d82bd11eefb59" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1a484cdd90ad2b7",
+      "status" : "failed",
+      "statusDetails" : "`cy.task('dbQuery')` failed with the following error:\n\n> connect ECONNREFUSED 127.0.0.1:54323\n\nhttps://on.cypress.io/api/task",
+      "time" : {
+        "start" : 1651212282202,
+        "stop" : 1651212283031,
+        "duration" : 829
+      }
+    } ]
+  },
+  "3f162ac531315a157f03e34ac7b15578" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f26d0f3f5c92f353",
+      "status" : "failed",
+      "statusDetails" : "`cy.task('dbQuery')` failed with the following error:\n\n> connect ECONNREFUSED 127.0.0.1:54323\n\nhttps://on.cypress.io/api/task",
+      "time" : {
+        "start" : 1651212330717,
+        "stop" : 1651212331741,
+        "duration" : 1024
+      }
+    } ]
+  },
+  "9ff4564b9cbafcba696236b57b7b1502" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f6ad7e8ffee5ea14",
+      "status" : "failed",
+      "statusDetails" : "`cy.task('dbQuery')` failed with the following error:\n\n> connect ECONNREFUSED 127.0.0.1:54323\n\nhttps://on.cypress.io/api/task",
+      "time" : {
+        "start" : 1651212306618,
+        "stop" : 1651212307630,
+        "duration" : 1012
+      }
+    } ]
+  },
+  "b6139e622d52a18972f5f47200806914" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9a8491d24b61f5ce",
+      "status" : "failed",
+      "statusDetails" : "`cy.task('dbQuery')` failed with the following error:\n\n> connect ECONNREFUSED 127.0.0.1:54323\n\nhttps://on.cypress.io/api/task",
+      "time" : {
+        "start" : 1651212312774,
+        "stop" : 1651212313669,
+        "duration" : 895
+      }
+    } ]
+  },
+  "1de82e169ba5f2d12e0fbdb1f5a6e23b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "df080c563f666cb4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651212357251,
+        "stop" : 1651212357850,
+        "duration" : 599
+      }
+    } ]
+  },
+  "e572c4b68696af617c3f2fd7900962e7" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "45db83091a055646",
+      "status" : "failed",
+      "statusDetails" : "`cy.task('dbQuery')` failed with the following error:\n\n> connect ECONNREFUSED 127.0.0.1:54323\n\nhttps://on.cypress.io/api/task",
+      "time" : {
+        "start" : 1651212336907,
+        "stop" : 1651212337772,
+        "duration" : 865
+      }
+    } ]
+  },
+  "f13cbbfc3143081739d6b27292129148" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7baeb20d63fe4909",
+      "status" : "failed",
+      "statusDetails" : "`cy.task('dbQuery')` failed with the following error:\n\n> connect ECONNREFUSED 127.0.0.1:54323\n\nhttps://on.cypress.io/api/task",
+      "time" : {
+        "start" : 1651212350125,
+        "stop" : 1651212351369,
+        "duration" : 1244
+      }
+    } ]
+  },
+  "de7263c108c010a1a14354ec78cb9efe" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "58165082a913c9a3",
+      "status" : "failed",
+      "statusDetails" : "`cy.task('dbQuery')` failed with the following error:\n\n> connect ECONNREFUSED 127.0.0.1:54323\n\nhttps://on.cypress.io/api/task",
+      "time" : {
+        "start" : 1651212294385,
+        "stop" : 1651212295548,
+        "duration" : 1163
+      }
+    } ]
+  },
+  "5ec407cf0be45eb86c733cd0825f6135" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "25b978b95cc47308",
+      "status" : "failed",
+      "statusDetails" : "`cy.task('dbQuery')` failed with the following error:\n\n> connect ECONNREFUSED 127.0.0.1:54323\n\nhttps://on.cypress.io/api/task",
+      "time" : {
+        "start" : 1651212318719,
+        "stop" : 1651212319580,
+        "duration" : 861
+      }
+    } ]
+  },
+  "b8dfa328c310a897c7b3cbdf7d970bc2" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "72e93c04771c9770",
+      "status" : "failed",
+      "statusDetails" : "`cy.task('dbQuery')` failed with the following error:\n\n> connect ECONNREFUSED 127.0.0.1:54323\n\nhttps://on.cypress.io/api/task",
+      "time" : {
+        "start" : 1651212351396,
+        "stop" : 1651212352344,
+        "duration" : 948
+      }
+    } ]
+  },
+  "2ea6392239eaa45aa2031946c5bb10f5" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f0135e05d4f62f35",
+      "status" : "failed",
+      "statusDetails" : "`cy.task('dbQuery')` failed with the following error:\n\n> connect ECONNREFUSED 127.0.0.1:54323\n\nhttps://on.cypress.io/api/task",
+      "time" : {
+        "start" : 1651212269303,
+        "stop" : 1651212276598,
+        "duration" : 7295
+      }
+    } ]
+  },
+  "13b885bdf17f64cf0e143ccaab0491b4" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c464ce8c1662de36",
+      "status" : "failed",
+      "statusDetails" : "`cy.task('dbQuery')` failed with the following error:\n\n> connect ECONNREFUSED 127.0.0.1:54323\n\nhttps://on.cypress.io/api/task",
+      "time" : {
+        "start" : 1651212324754,
+        "stop" : 1651212325580,
+        "duration" : 826
+      }
+    } ]
+  },
+  "ab03056ab758e9c2b5d23763746edd78" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1a3d08bf56f5e883",
+      "status" : "failed",
+      "statusDetails" : "`cy.task('dbQuery')` failed with the following error:\n\n> connect ECONNREFUSED 127.0.0.1:54323\n\nhttps://on.cypress.io/api/task",
+      "time" : {
+        "start" : 1651212288419,
+        "stop" : 1651212289334,
+        "duration" : 915
+      }
+    } ]
+  },
+  "62fff8d866037c11c254e6c1775f9947" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "95044d6819fd32e0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651212337902,
+        "stop" : 1651212338065,
+        "duration" : 163
+      }
+    } ]
+  },
+  "48e97e4b5e12e7baa0c37be8baf672a3" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "28d6aa39e33dc814",
+      "status" : "failed",
+      "statusDetails" : "`cy.task('dbQuery')` failed with the following error:\n\n> connect ECONNREFUSED 127.0.0.1:54323\n\nhttps://on.cypress.io/api/task",
+      "time" : {
+        "start" : 1651212348557,
+        "stop" : 1651212350006,
+        "duration" : 1449
+      }
+    } ]
+  }
+}

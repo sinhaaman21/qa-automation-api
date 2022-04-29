@@ -1,0 +1,137 @@
+{
+  "uid" : "8722ed3f71235dcf",
+  "name" : "fetch one flow based on id",
+  "fullName" : "fetch one flow based on id",
+  "historyId" : "b6139e622d52a18972f5f47200806914",
+  "time" : {
+    "start" : 1651211893327,
+    "stop" : 1651211894160,
+    "duration" : 833
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "GET 200 https://flow-builder-stg.limechat.ai/builder/v1/flow/36",
+      "time" : {
+        "start" : 1651211893443,
+        "stop" : 1651211893772,
+        "duration" : 329
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "task dbQuery, {query: Select start_node_id from builder_flow WHERE ID = 36, connection: Object{5}}",
+      "time" : {
+        "start" : 1651211893915,
+        "stop" : 1651211894126,
+        "duration" : 211
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "assert expected **[{\"start_node_id\":\"eb44bad6-3dbe-4182-9a99-dc9018ad2bb4\"}]** to include **eb44bad6-3dbe-4182-9a99-dc9018ad2bb4**",
+      "time" : {
+        "start" : 1651211894155,
+        "stop" : 1651211894155,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "[{\"start_node_id\":\"eb44bad6-3dbe-4182-9a99-dc9018ad2bb4\"}]"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "assert expected **true** to equal **true**",
+      "time" : {
+        "start" : 1651211894155,
+        "stop" : 1651211894155,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "true"
+      }, {
+        "name" : "expected",
+        "value" : "true"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "assert expected **200** to equal **200**",
+      "time" : {
+        "start" : 1651211894156,
+        "stop" : 1651211894156,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "200"
+      }, {
+        "name" : "expected",
+        "value" : "200"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "get one flow "
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8722ed3f71235dcf.json",
+  "parameterValues" : [ ]
+}

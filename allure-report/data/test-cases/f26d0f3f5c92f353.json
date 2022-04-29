@@ -1,0 +1,243 @@
+{
+  "uid" : "f26d0f3f5c92f353",
+  "name" : "create event on staging ",
+  "fullName" : "create event on staging ",
+  "historyId" : "3f162ac531315a157f03e34ac7b15578",
+  "time" : {
+    "start" : 1651212330717,
+    "stop" : 1651212331741,
+    "duration" : 1024
+  },
+  "status" : "failed",
+  "statusMessage" : "`cy.task('dbQuery')` failed with the following error:\n\n> connect ECONNREFUSED 127.0.0.1:54323\n\nhttps://on.cypress.io/api/task",
+  "statusTrace" : "CypressError: `cy.task('dbQuery')` failed with the following error:\n\n> connect ECONNREFUSED 127.0.0.1:54323\n\nhttps://on.cypress.io/api/task\n    at http://localhost:60565/__cypress/runner/cypress_runner.js:166337:78\n    at tryCatcher (http://localhost:60565/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (http://localhost:60565/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (http://localhost:60565/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (http://localhost:60565/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (http://localhost:60565/__cypress/runner/cypress_runner.js:11135:18)\n    at _drainQueueStep (http://localhost:60565/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (http://localhost:60565/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:60565/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (http://localhost:60565/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:60565/__cypress/tests?p=cypress/integration/FlowBuilderApis/post_createEvent.spec.js:163:7)\n\nFrom Node.js Internals:\n  Error: connect ECONNREFUSED 127.0.0.1:54323\n      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1161:16)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 3,
+  "retriesStatusChange" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "`cy.task('dbQuery')` failed with the following error:\n\n> connect ECONNREFUSED 127.0.0.1:54323\n\nhttps://on.cypress.io/api/task",
+    "statusTrace" : "CypressError: `cy.task('dbQuery')` failed with the following error:\n\n> connect ECONNREFUSED 127.0.0.1:54323\n\nhttps://on.cypress.io/api/task\n    at http://localhost:60565/__cypress/runner/cypress_runner.js:166337:78\n    at tryCatcher (http://localhost:60565/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (http://localhost:60565/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (http://localhost:60565/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (http://localhost:60565/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (http://localhost:60565/__cypress/runner/cypress_runner.js:11135:18)\n    at _drainQueueStep (http://localhost:60565/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (http://localhost:60565/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:60565/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (http://localhost:60565/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:60565/__cypress/tests?p=cypress/integration/FlowBuilderApis/post_createEvent.spec.js:163:7)\n\nFrom Node.js Internals:\n  Error: connect ECONNREFUSED 127.0.0.1:54323\n      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1161:16)",
+    "steps" : [ {
+      "name" : "POST 201 https://flow-builder-stg.limechat.ai/builder/v1/event/create",
+      "time" : {
+        "start" : 1651212330843,
+        "stop" : 1651212331186,
+        "duration" : 343
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "task dbQuery, {query: select user_identity from builder_event where id = '120';, connection: Object{5}}",
+      "time" : {
+        "start" : 1651212331393,
+        "stop" : 1651212331736,
+        "duration" : 343
+      },
+      "status" : "failed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "assert expected **true** to equal **true**",
+      "time" : {
+        "start" : 1651212331736,
+        "stop" : 1651212331736,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "true"
+      }, {
+        "name" : "expected",
+        "value" : "true"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "assert expected **order_created** to equal **order_created**",
+      "time" : {
+        "start" : 1651212331736,
+        "stop" : 1651212331736,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "order_created"
+      }, {
+        "name" : "expected",
+        "value" : "order_created"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "assert expected **string1** to equal **string1**",
+      "time" : {
+        "start" : 1651212331736,
+        "stop" : 1651212331736,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "string1"
+      }, {
+        "name" : "expected",
+        "value" : "string1"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "assert expected **kq040aoxn0l0nucQAName** to equal **kq040aoxn0l0nucQAName**",
+      "time" : {
+        "start" : 1651212331737,
+        "stop" : 1651212331737,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "kq040aoxn0l0nucQAName"
+      }, {
+        "name" : "expected",
+        "value" : "kq040aoxn0l0nucQAName"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "assert expected **digunxarzzlkyazQA@test.com** to equal **digunxarzzlkyazQA@test.com**",
+      "time" : {
+        "start" : 1651212331737,
+        "stop" : 1651212331737,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "digunxarzzlkyazQA@test.com"
+      }, {
+        "name" : "expected",
+        "value" : "digunxarzzlkyazQA@test.com"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "assert expected **201** to equal **201**",
+      "time" : {
+        "start" : 1651212331738,
+        "stop" : 1651212331738,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "201"
+      }, {
+        "name" : "expected",
+        "value" : "201"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "d6da1078927c08b4",
+      "name" : "FlowBuilderApis/post_createEvent.spec.js:2022-04-29T06:05:31.590Z",
+      "source" : "d6da1078927c08b4.png",
+      "type" : "image/png",
+      "size" : 110131
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 8,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "create event "
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "fabaee14f03562e0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651212181069,
+        "stop" : 1651212182423,
+        "duration" : 1354
+      }
+    }, {
+      "uid" : "49de9cfef4299ad4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651211910113,
+        "stop" : 1651211911444,
+        "duration" : 1331
+      }
+    }, {
+      "uid" : "b7ecff451e53abe3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651158251247,
+        "stop" : 1651158252499,
+        "duration" : 1252
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "f26d0f3f5c92f353.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,159 @@
+{
+  "uid" : "45db83091a055646",
+  "name" : "create flow on staging ",
+  "fullName" : "create flow on staging ",
+  "historyId" : "e572c4b68696af617c3f2fd7900962e7",
+  "time" : {
+    "start" : 1651212336907,
+    "stop" : 1651212337772,
+    "duration" : 865
+  },
+  "status" : "failed",
+  "statusMessage" : "`cy.task('dbQuery')` failed with the following error:\n\n> connect ECONNREFUSED 127.0.0.1:54323\n\nhttps://on.cypress.io/api/task",
+  "statusTrace" : "CypressError: `cy.task('dbQuery')` failed with the following error:\n\n> connect ECONNREFUSED 127.0.0.1:54323\n\nhttps://on.cypress.io/api/task\n    at http://localhost:60565/__cypress/runner/cypress_runner.js:166337:78\n    at tryCatcher (http://localhost:60565/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (http://localhost:60565/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (http://localhost:60565/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (http://localhost:60565/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (http://localhost:60565/__cypress/runner/cypress_runner.js:11135:18)\n    at _drainQueueStep (http://localhost:60565/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (http://localhost:60565/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:60565/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (http://localhost:60565/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:60565/__cypress/tests?p=cypress/integration/FlowBuilderApis/post_createFlow.spec.js:1126:7)\n\nFrom Node.js Internals:\n  Error: connect ECONNREFUSED 127.0.0.1:54323\n      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1161:16)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 3,
+  "retriesStatusChange" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "`cy.task('dbQuery')` failed with the following error:\n\n> connect ECONNREFUSED 127.0.0.1:54323\n\nhttps://on.cypress.io/api/task",
+    "statusTrace" : "CypressError: `cy.task('dbQuery')` failed with the following error:\n\n> connect ECONNREFUSED 127.0.0.1:54323\n\nhttps://on.cypress.io/api/task\n    at http://localhost:60565/__cypress/runner/cypress_runner.js:166337:78\n    at tryCatcher (http://localhost:60565/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (http://localhost:60565/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (http://localhost:60565/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (http://localhost:60565/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (http://localhost:60565/__cypress/runner/cypress_runner.js:11135:18)\n    at _drainQueueStep (http://localhost:60565/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (http://localhost:60565/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:60565/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (http://localhost:60565/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:60565/__cypress/tests?p=cypress/integration/FlowBuilderApis/post_createFlow.spec.js:1126:7)\n\nFrom Node.js Internals:\n  Error: connect ECONNREFUSED 127.0.0.1:54323\n      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1161:16)",
+    "steps" : [ {
+      "name" : "POST 201 https://flow-builder-stg.limechat.ai/builder/v1/flow/create",
+      "time" : {
+        "start" : 1651212337040,
+        "stop" : 1651212337126,
+        "duration" : 86
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "task dbQuery, {query: select start_node_id from builder_flow where name = 'iwrzr35vcxix88aQAName';, connection: Object{5}}",
+      "time" : {
+        "start" : 1651212337149,
+        "stop" : 1651212337767,
+        "duration" : 618
+      },
+      "status" : "failed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "assert expected **true** to equal **true**",
+      "time" : {
+        "start" : 1651212337768,
+        "stop" : 1651212337768,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "true"
+      }, {
+        "name" : "expected",
+        "value" : "true"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "assert expected **201** to equal **201**",
+      "time" : {
+        "start" : 1651212337768,
+        "stop" : 1651212337768,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "201"
+      }, {
+        "name" : "expected",
+        "value" : "201"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "b6316ec97017b6cc",
+      "name" : "FlowBuilderApis/post_createFlow.spec.js:2022-04-29T06:05:37.218Z",
+      "source" : "b6316ec97017b6cc.png",
+      "type" : "image/png",
+      "size" : 75608
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "create flow "
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "87871a53f9996a73",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651212187227,
+        "stop" : 1651212187641,
+        "duration" : 414
+      }
+    }, {
+      "uid" : "c87690c818bfbc8f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651211916108,
+        "stop" : 1651211916503,
+        "duration" : 395
+      }
+    }, {
+      "uid" : "e0809cd215900992",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651158257766,
+        "stop" : 1651158258199,
+        "duration" : 433
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "45db83091a055646.json",
+  "parameterValues" : [ ]
+}

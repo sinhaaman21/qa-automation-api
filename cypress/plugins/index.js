@@ -22,12 +22,7 @@ const dbConfig = require('../../cypress.json');
  * @type {Cypress.PluginConfig}
  */
 // eslint-disable-next-line no-unused-vars
-const allureWriter = require('@shelex/cypress-allure-plugin/writer');
 
-module.exports = (on, config) => {
-    allureWriter(on, config);
-    return config;
-};
 
 module.exports = (on, config) => {
   // `on` is used to hook into various events Cypress emits
@@ -39,11 +34,15 @@ module.exports = (on, config) => {
     }
   });
 }
+const allureWriter = require('@shelex/cypress-allure-plugin/writer');
 
-module.exports = on => {
+module.exports = (on,config) => {
   on("task", {
       dbQuery:(query)=> require("cypress-postgres")(query.query,query.connection)
   });
+  allureWriter(on, config);
+    return config;
 };
+
 
 

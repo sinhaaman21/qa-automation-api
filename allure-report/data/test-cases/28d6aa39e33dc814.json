@@ -1,0 +1,174 @@
+{
+  "uid" : "28d6aa39e33dc814",
+  "name" : "password_reset on staging FB ",
+  "fullName" : "password_reset on staging FB ",
+  "historyId" : "48e97e4b5e12e7baa0c37be8baf672a3",
+  "time" : {
+    "start" : 1651212348557,
+    "stop" : 1651212350006,
+    "duration" : 1449
+  },
+  "status" : "failed",
+  "statusMessage" : "`cy.task('dbQuery')` failed with the following error:\n\n> connect ECONNREFUSED 127.0.0.1:54323\n\nhttps://on.cypress.io/api/task",
+  "statusTrace" : "CypressError: `cy.task('dbQuery')` failed with the following error:\n\n> connect ECONNREFUSED 127.0.0.1:54323\n\nhttps://on.cypress.io/api/task\n    at http://localhost:60565/__cypress/runner/cypress_runner.js:166337:78\n    at tryCatcher (http://localhost:60565/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (http://localhost:60565/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (http://localhost:60565/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (http://localhost:60565/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (http://localhost:60565/__cypress/runner/cypress_runner.js:11135:18)\n    at _drainQueueStep (http://localhost:60565/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (http://localhost:60565/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:60565/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (http://localhost:60565/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:60565/__cypress/tests?p=cypress/integration/FlowBuilderApis/post_passwordReset.spec.js:148:7)\n\nFrom Node.js Internals:\n  Error: connect ECONNREFUSED 127.0.0.1:54323\n      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1161:16)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 3,
+  "retriesStatusChange" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "`cy.task('dbQuery')` failed with the following error:\n\n> connect ECONNREFUSED 127.0.0.1:54323\n\nhttps://on.cypress.io/api/task",
+    "statusTrace" : "CypressError: `cy.task('dbQuery')` failed with the following error:\n\n> connect ECONNREFUSED 127.0.0.1:54323\n\nhttps://on.cypress.io/api/task\n    at http://localhost:60565/__cypress/runner/cypress_runner.js:166337:78\n    at tryCatcher (http://localhost:60565/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (http://localhost:60565/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (http://localhost:60565/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (http://localhost:60565/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (http://localhost:60565/__cypress/runner/cypress_runner.js:11135:18)\n    at _drainQueueStep (http://localhost:60565/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (http://localhost:60565/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:60565/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (http://localhost:60565/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:60565/__cypress/tests?p=cypress/integration/FlowBuilderApis/post_passwordReset.spec.js:148:7)\n\nFrom Node.js Internals:\n  Error: connect ECONNREFUSED 127.0.0.1:54323\n      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1161:16)",
+    "steps" : [ {
+      "name" : "POST 200 https://flow-builder-stg.limechat.ai/auth/password_reset/init",
+      "time" : {
+        "start" : 1651212348669,
+        "stop" : 1651212349323,
+        "duration" : 654
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "log ResetPassword Initialisation",
+      "time" : {
+        "start" : 1651212349363,
+        "stop" : 1651212349367,
+        "duration" : 4
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "task dbQuery, {query: select token from account_passwordresettoken where account_id = 10;, connection: Object{5}}",
+      "time" : {
+        "start" : 1651212349368,
+        "stop" : 1651212350002,
+        "duration" : 634
+      },
+      "status" : "failed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "assert expected **true** to equal **true**",
+      "time" : {
+        "start" : 1651212350002,
+        "stop" : 1651212350002,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "true"
+      }, {
+        "name" : "expected",
+        "value" : "true"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "assert expected **200** to equal **200**",
+      "time" : {
+        "start" : 1651212350002,
+        "stop" : 1651212350002,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "200"
+      }, {
+        "name" : "expected",
+        "value" : "200"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "31cfedafe4b82635",
+      "name" : "FlowBuilderApis/post_passwordReset.spec.js:2022-04-29T06:05:49.447Z",
+      "source" : "31cfedafe4b82635.png",
+      "type" : "image/png",
+      "size" : 88401
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "password_reset on flowBuilder stage "
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "66d15a2ea35e05e5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651212198339,
+        "stop" : 1651212199928,
+        "duration" : 1589
+      }
+    }, {
+      "uid" : "f40402eca05fead1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651211926957,
+        "stop" : 1651211928384,
+        "duration" : 1427
+      }
+    }, {
+      "uid" : "5130ad3389a0e05f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651158270056,
+        "stop" : 1651158271722,
+        "duration" : 1666
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "28d6aa39e33dc814.json",
+  "parameterValues" : [ ]
+}

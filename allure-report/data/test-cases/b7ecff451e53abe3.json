@@ -1,0 +1,254 @@
+{
+  "uid" : "b7ecff451e53abe3",
+  "name" : "create event on staging ",
+  "fullName" : "create event on staging ",
+  "historyId" : "3f162ac531315a157f03e34ac7b15578",
+  "time" : {
+    "start" : 1651158251247,
+    "stop" : 1651158252499,
+    "duration" : 1252
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST 201 https://flow-builder-stg.limechat.ai/builder/v1/event/create",
+      "time" : {
+        "start" : 1651158251407,
+        "stop" : 1651158251818,
+        "duration" : 411
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "task dbQuery, {query: select user_identity from builder_event where id = '117';, connection: Object{5}}",
+      "time" : {
+        "start" : 1651158252019,
+        "stop" : 1651158252230,
+        "duration" : 211
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "assert expected **[{\"user_identity\":\"string1\"}]** to include **string1**",
+      "time" : {
+        "start" : 1651158252323,
+        "stop" : 1651158252323,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "[{\"user_identity\":\"string1\"}]"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "task dbQuery, {query: select data -> 'name' as name from builder_event where id = '117';, connection: Object{5}}",
+      "time" : {
+        "start" : 1651158252324,
+        "stop" : 1651158252472,
+        "duration" : 148
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "assert expected **[{\"name\":\"xmm8nqwr9tk1vucQAName\"}]** to include **xmm8nqwr9tk1vucQAName**",
+      "time" : {
+        "start" : 1651158252492,
+        "stop" : 1651158252492,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "[{\"name\":\"xmm8nqwr9tk1vucQAName\"}]"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "assert expected **true** to equal **true**",
+      "time" : {
+        "start" : 1651158252493,
+        "stop" : 1651158252493,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "true"
+      }, {
+        "name" : "expected",
+        "value" : "true"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "assert expected **order_created** to equal **order_created**",
+      "time" : {
+        "start" : 1651158252493,
+        "stop" : 1651158252493,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "order_created"
+      }, {
+        "name" : "expected",
+        "value" : "order_created"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "assert expected **string1** to equal **string1**",
+      "time" : {
+        "start" : 1651158252493,
+        "stop" : 1651158252493,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "string1"
+      }, {
+        "name" : "expected",
+        "value" : "string1"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "assert expected **xmm8nqwr9tk1vucQAName** to equal **xmm8nqwr9tk1vucQAName**",
+      "time" : {
+        "start" : 1651158252493,
+        "stop" : 1651158252493,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "xmm8nqwr9tk1vucQAName"
+      }, {
+        "name" : "expected",
+        "value" : "xmm8nqwr9tk1vucQAName"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "assert expected **geb4wnske3rxbfmQA@test.com** to equal **geb4wnske3rxbfmQA@test.com**",
+      "time" : {
+        "start" : 1651158252493,
+        "stop" : 1651158252493,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "geb4wnske3rxbfmQA@test.com"
+      }, {
+        "name" : "expected",
+        "value" : "geb4wnske3rxbfmQA@test.com"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "assert expected **201** to equal **201**",
+      "time" : {
+        "start" : 1651158252493,
+        "stop" : 1651158252493,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "201"
+      }, {
+        "name" : "expected",
+        "value" : "201"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 11,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "create event "
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b7ecff451e53abe3.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,171 @@
+[ {
+  "uid" : "f26d0f3f5c92f353",
+  "name" : "create event on staging ",
+  "time" : {
+    "start" : 1651212330717,
+    "stop" : 1651212331741,
+    "duration" : 1024
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "f6ad7e8ffee5ea14",
+  "name" : "get event based on id ",
+  "time" : {
+    "start" : 1651212306618,
+    "stop" : 1651212307630,
+    "duration" : 1012
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "1a484cdd90ad2b7",
+  "name" : "fetch all events",
+  "time" : {
+    "start" : 1651212282202,
+    "stop" : 1651212283031,
+    "duration" : 829
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "c464ce8c1662de36",
+  "name" : "update flow on staging ",
+  "time" : {
+    "start" : 1651212324754,
+    "stop" : 1651212325580,
+    "duration" : 826
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "9f2ee9d29d56509",
+  "name" : "get event_type based on name ",
+  "time" : {
+    "start" : 1651212300588,
+    "stop" : 1651212301613,
+    "duration" : 1025
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "45db83091a055646",
+  "name" : "create flow on staging ",
+  "time" : {
+    "start" : 1651212336907,
+    "stop" : 1651212337772,
+    "duration" : 865
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "f0135e05d4f62f35",
+  "name" : "fetch all event_type ",
+  "time" : {
+    "start" : 1651212269303,
+    "stop" : 1651212276598,
+    "duration" : 7295
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "25b978b95cc47308",
+  "name" : "fetch one flow instance based on id",
+  "time" : {
+    "start" : 1651212318719,
+    "stop" : 1651212319580,
+    "duration" : 861
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "1a3d08bf56f5e883",
+  "name" : "fetch all flows ",
+  "time" : {
+    "start" : 1651212288419,
+    "stop" : 1651212289334,
+    "duration" : 915
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "9a8491d24b61f5ce",
+  "name" : "fetch one flow based on id",
+  "time" : {
+    "start" : 1651212312774,
+    "stop" : 1651212313669,
+    "duration" : 895
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "95044d6819fd32e0",
+  "name" : "negative - check flow on staging with cycle in flow ",
+  "time" : {
+    "start" : 1651212337902,
+    "stop" : 1651212338065,
+    "duration" : 163
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "df080c563f666cb4",
+  "name" : "signUp on staging CB ",
+  "time" : {
+    "start" : 1651212357251,
+    "stop" : 1651212357850,
+    "duration" : 599
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "28d6aa39e33dc814",
+  "name" : "password_reset on staging FB ",
+  "time" : {
+    "start" : 1651212348557,
+    "stop" : 1651212350006,
+    "duration" : 1449
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "58165082a913c9a3",
+  "name" : "fetch all flow instance ",
+  "time" : {
+    "start" : 1651212294385,
+    "stop" : 1651212295548,
+    "duration" : 1163
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "7baeb20d63fe4909",
+  "name" : "password_reset with password fields mismatch on staging FB ",
+  "time" : {
+    "start" : 1651212350125,
+    "stop" : 1651212351369,
+    "duration" : 1244
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "b58f93f8bb1d67e5",
+  "name" : "login on staging  ",
+  "time" : {
+    "start" : 1651212342844,
+    "stop" : 1651212343499,
+    "duration" : 655
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "72e93c04771c9770",
+  "name" : "password_reset with incorrect token on staging FB ",
+  "time" : {
+    "start" : 1651212351396,
+    "stop" : 1651212352344,
+    "duration" : 948
+  },
+  "status" : "failed",
+  "severity" : "normal"
+} ]

@@ -1,0 +1,350 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "get all event_type ",
+    "children" : [ {
+      "name" : "fetch all event_type ",
+      "uid" : "f0135e05d4f62f35",
+      "parentUid" : "db56b5e40740e3147fc44985b5d4b4f2",
+      "status" : "failed",
+      "time" : {
+        "start" : 1651212269303,
+        "stop" : 1651212276598,
+        "duration" : 7295
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 3,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    } ],
+    "uid" : "db56b5e40740e3147fc44985b5d4b4f2"
+  }, {
+    "name" : "get events ",
+    "children" : [ {
+      "name" : "fetch all events",
+      "uid" : "1a484cdd90ad2b7",
+      "parentUid" : "3820f355d9f602e08185b8ff9676c4e0",
+      "status" : "failed",
+      "time" : {
+        "start" : 1651212282202,
+        "stop" : 1651212283031,
+        "duration" : 829
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 3,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    } ],
+    "uid" : "3820f355d9f602e08185b8ff9676c4e0"
+  }, {
+    "name" : "get all flows ",
+    "children" : [ {
+      "name" : "fetch all flows ",
+      "uid" : "1a3d08bf56f5e883",
+      "parentUid" : "a58608f47701190a1642faa0f75d44a1",
+      "status" : "failed",
+      "time" : {
+        "start" : 1651212288419,
+        "stop" : 1651212289334,
+        "duration" : 915
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 3,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    } ],
+    "uid" : "a58608f47701190a1642faa0f75d44a1"
+  }, {
+    "name" : "get all Flow instance ",
+    "children" : [ {
+      "name" : "fetch all flow instance ",
+      "uid" : "58165082a913c9a3",
+      "parentUid" : "e6b1b38f23d5d0bd36e42188cce04f06",
+      "status" : "failed",
+      "time" : {
+        "start" : 1651212294385,
+        "stop" : 1651212295548,
+        "duration" : 1163
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 3,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    } ],
+    "uid" : "e6b1b38f23d5d0bd36e42188cce04f06"
+  }, {
+    "name" : "get one event_type ",
+    "children" : [ {
+      "name" : "get event_type based on name ",
+      "uid" : "9f2ee9d29d56509",
+      "parentUid" : "4b240ac1043bd3bf49fea57ab21f2ccb",
+      "status" : "failed",
+      "time" : {
+        "start" : 1651212300588,
+        "stop" : 1651212301613,
+        "duration" : 1025
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 3,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    } ],
+    "uid" : "4b240ac1043bd3bf49fea57ab21f2ccb"
+  }, {
+    "name" : "get one event ",
+    "children" : [ {
+      "name" : "get event based on id ",
+      "uid" : "f6ad7e8ffee5ea14",
+      "parentUid" : "b71288ff4f61f26c5847151f2d34d6e4",
+      "status" : "failed",
+      "time" : {
+        "start" : 1651212306618,
+        "stop" : 1651212307630,
+        "duration" : 1012
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 3,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    } ],
+    "uid" : "b71288ff4f61f26c5847151f2d34d6e4"
+  }, {
+    "name" : "get one flow ",
+    "children" : [ {
+      "name" : "fetch one flow based on id",
+      "uid" : "9a8491d24b61f5ce",
+      "parentUid" : "ede9e5341bac7ce46c5115754c03ae3d",
+      "status" : "failed",
+      "time" : {
+        "start" : 1651212312774,
+        "stop" : 1651212313669,
+        "duration" : 895
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 3,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    } ],
+    "uid" : "ede9e5341bac7ce46c5115754c03ae3d"
+  }, {
+    "name" : "get one Flow instance",
+    "children" : [ {
+      "name" : "fetch one flow instance based on id",
+      "uid" : "25b978b95cc47308",
+      "parentUid" : "d16e49e0fba49405c3e0c172fb801b47",
+      "status" : "failed",
+      "time" : {
+        "start" : 1651212318719,
+        "stop" : 1651212319580,
+        "duration" : 861
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 3,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    } ],
+    "uid" : "d16e49e0fba49405c3e0c172fb801b47"
+  }, {
+    "name" : "update flow ",
+    "children" : [ {
+      "name" : "update flow on staging ",
+      "uid" : "c464ce8c1662de36",
+      "parentUid" : "121cd4946b0e11380383ba9ac16bf50a",
+      "status" : "failed",
+      "time" : {
+        "start" : 1651212324754,
+        "stop" : 1651212325580,
+        "duration" : 826
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 3,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    } ],
+    "uid" : "121cd4946b0e11380383ba9ac16bf50a"
+  }, {
+    "name" : "create event ",
+    "children" : [ {
+      "name" : "create event on staging ",
+      "uid" : "f26d0f3f5c92f353",
+      "parentUid" : "7a5c8d69786445a5cbf64d568fefb9e4",
+      "status" : "failed",
+      "time" : {
+        "start" : 1651212330717,
+        "stop" : 1651212331741,
+        "duration" : 1024
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 3,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    } ],
+    "uid" : "7a5c8d69786445a5cbf64d568fefb9e4"
+  }, {
+    "name" : "create flow ",
+    "children" : [ {
+      "name" : "create flow on staging ",
+      "uid" : "45db83091a055646",
+      "parentUid" : "f3fbf615308c1c628f0dd05097e89a81",
+      "status" : "failed",
+      "time" : {
+        "start" : 1651212336907,
+        "stop" : 1651212337772,
+        "duration" : 865
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 3,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "negative - check flow on staging with cycle in flow ",
+      "uid" : "95044d6819fd32e0",
+      "parentUid" : "f3fbf615308c1c628f0dd05097e89a81",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651212337902,
+        "stop" : 1651212338065,
+        "duration" : 163
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 3,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "f3fbf615308c1c628f0dd05097e89a81"
+  }, {
+    "name" : "login ",
+    "children" : [ {
+      "name" : "login on staging  ",
+      "uid" : "b58f93f8bb1d67e5",
+      "parentUid" : "f0c24a322d56d752fd8e16e2a617c212",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651212342844,
+        "stop" : 1651212343499,
+        "duration" : 655
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 3,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "f0c24a322d56d752fd8e16e2a617c212"
+  }, {
+    "name" : "password_reset on flowBuilder stage ",
+    "children" : [ {
+      "name" : "password_reset on staging FB ",
+      "uid" : "28d6aa39e33dc814",
+      "parentUid" : "8daa9ce69fe7d8238632854784e1d4ea",
+      "status" : "failed",
+      "time" : {
+        "start" : 1651212348557,
+        "stop" : 1651212350006,
+        "duration" : 1449
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 3,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "password_reset with password fields mismatch on staging FB ",
+      "uid" : "7baeb20d63fe4909",
+      "parentUid" : "8daa9ce69fe7d8238632854784e1d4ea",
+      "status" : "failed",
+      "time" : {
+        "start" : 1651212350125,
+        "stop" : 1651212351369,
+        "duration" : 1244
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 3,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "password_reset with incorrect token on staging FB ",
+      "uid" : "72e93c04771c9770",
+      "parentUid" : "8daa9ce69fe7d8238632854784e1d4ea",
+      "status" : "failed",
+      "time" : {
+        "start" : 1651212351396,
+        "stop" : 1651212352344,
+        "duration" : 948
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 3,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    } ],
+    "uid" : "8daa9ce69fe7d8238632854784e1d4ea"
+  }, {
+    "name" : "signUp ",
+    "children" : [ {
+      "name" : "signUp on staging CB ",
+      "uid" : "df080c563f666cb4",
+      "parentUid" : "fabc45c78b6330617e472f8210c575c6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651212357251,
+        "stop" : 1651212357850,
+        "duration" : 599
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 3,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "fabc45c78b6330617e472f8210c575c6"
+  } ]
+}
