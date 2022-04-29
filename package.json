@@ -6,7 +6,7 @@
 
 
   "scripts": {
-    "allure:report": "allure generate allure-results --clean -o allure-report && allure open allure-report",
+    "allure:report": "allure generate allure-results --clean -o allure-report",
     "posttest": "npm run allure:report",
     "e2e": "npx cypress run --headless --record --key b2c0e80c-6cfd-442c-b412-0ee5759d27a0",
     "ci": "npm install cypress --save-dev",

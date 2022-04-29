@@ -21,13 +21,7 @@ pipeline {
         }
         stage('e2e Tests') {
             steps {
-                sh 'npm run e2e'
-            }
-        }
-    }
-    post{
-        always{
-            script{
+                script{
                 try{
                     sh 'npm test'
                 }
@@ -37,6 +31,8 @@ pipeline {
                 }
             }
         }
+    }
+    post{
         success{
             slackSend channel: 'jenkins-ci-notifier', color: '#22910C', message: "Build Success: \nProject: ${env.JOB_NAME}  \n Build Number: ${env.BUILD_NUMBER} \n Build URL: ${env.BUILD_URL}"
         }
