@@ -29,13 +29,12 @@ pipeline {
         always{
             script{
                 try{
-                    sh 'npm run pretest'
+                    sh 'npm test'
                 }
                 catch(e){
                     echo 'Caught: ${e}'
                     currentBuild.result=='SUCCESS'
                 }
-                sh 'npm run mocha --reporter mocha-allure-reporter'
             }
         }
         success{

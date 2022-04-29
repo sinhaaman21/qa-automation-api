@@ -1,8 +1,8 @@
 #Ignore node modules packages
-/node_modules
-
+/node_modules/*
+/.gitlab-ci.yml
 #Ignore allure-reports from being recorded
 /allure-report/
 
 #Ignore allure-results from being added
-/allure-results
+/allure-results/
