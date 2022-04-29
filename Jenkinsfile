@@ -22,12 +22,13 @@ pipeline {
         stage('e2e Tests') {
             steps {
                 script{
-                try{
-                    sh 'npm test'
-                }
-                catch(e){
-                    echo 'Caught: ${e}'
-                    currentBuild.result=='SUCCESS'
+                    try{
+                        sh 'npm test'
+                    }
+                    catch(e){
+                        echo 'Caught: ${e}'
+                        currentBuild.result=='SUCCESS'
+                    }
                 }
             }
         }
