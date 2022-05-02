@@ -1,3 +1,4 @@
+//To test DB client 
 const {Client} = require('pg')
 
 const client = new Client({
