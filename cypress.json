@@ -6,6 +6,7 @@
         "host": "limechat-stg-rds.cn0rotjyqknw.ap-south-1.rds.amazonaws.com",
         "database": "limechat_db",
         "port": 5432
-    }
+    },
+    "testFiles": "**/*.{feature,features}"
 }
 
