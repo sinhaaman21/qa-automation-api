@@ -7,7 +7,7 @@ describe('get channel_distribution for WSS', () => {
 
         cy.request({
             method: 'GET',
-            url: `${hostLimekitProd}/user_insights/handoff_by_flows/`,
+            url: `${hostLimekitProd}/user_insights/channel_distribution/`,
             headers: {
                 'Authorization': `Bearer ${limeKitToken_Ac_71_prod}`
             },

@@ -1,0 +1,384 @@
+{
+  "uid" : "2761f7a56a2affd7",
+  "name" : "get  bot failing data for WSS",
+  "fullName" : "get  bot failing data for WSS",
+  "historyId" : "e5ae7358d0da53440f1f7a287fe15d02",
+  "time" : {
+    "start" : 1651481338260,
+    "stop" : 1651481340793,
+    "duration" : 2533
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 1,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "GET 200 https://limekit.limechat.ai/user_insights/bot_failing_data/",
+      "time" : {
+        "start" : 1651481338346,
+        "stop" : 1651481339557,
+        "duration" : 1211
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "assert expected **{ Object (Name, Conversation ID, ...) }** to have keys **Name**, **Conversation ID**, **Bot Confidence%**, and **Reason**",
+      "time" : {
+        "start" : 1651481340784,
+        "stop" : 1651481340784,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "[\n  \"Bot Confidence%\",\n  \"Conversation ID\",\n  \"Name\",\n  \"Reason\"\n]"
+      }, {
+        "name" : "expected",
+        "value" : "[\n  \"Bot Confidence%\",\n  \"Conversation ID\",\n  \"Name\",\n  \"Reason\"\n]"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "assert expected **/deny** not to be null",
+      "time" : {
+        "start" : 1651481340785,
+        "stop" : 1651481340785,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "/deny"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "assert expected **AGENT HANDOFF** not to be null",
+      "time" : {
+        "start" : 1651481340785,
+        "stop" : 1651481340785,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "AGENT HANDOFF"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "assert expected **{ Object (Name, Conversation ID, ...) }** to have keys **Name**, **Conversation ID**, **Bot Confidence%**, and **Reason**",
+      "time" : {
+        "start" : 1651481340785,
+        "stop" : 1651481340785,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "[\n  \"Bot Confidence%\",\n  \"Conversation ID\",\n  \"Name\",\n  \"Reason\"\n]"
+      }, {
+        "name" : "expected",
+        "value" : "[\n  \"Bot Confidence%\",\n  \"Conversation ID\",\n  \"Name\",\n  \"Reason\"\n]"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "assert expected **HOTEL                  \\n          MMR GARDENS\\n                     &\\n ANJAPPAR RESTAURANT   \\n           (K.K NAGAR)\\n              MADURAI\\n            THANK YOU** not to be null",
+      "time" : {
+        "start" : 1651481340785,
+        "stop" : 1651481340785,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "HOTEL                  \n          MMR GARDENS\n                     &\n ANJAPPAR RESTAURANT   \n           (K.K NAGAR)\n              MADURAI\n            THANK YOU"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "assert expected **AGENT HANDOFF** not to be null",
+      "time" : {
+        "start" : 1651481340785,
+        "stop" : 1651481340785,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "AGENT HANDOFF"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "assert expected **{ Object (Name, Conversation ID, ...) }** to have keys **Name**, **Conversation ID**, **Bot Confidence%**, and **Reason**",
+      "time" : {
+        "start" : 1651481340785,
+        "stop" : 1651481340785,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "[\n  \"Bot Confidence%\",\n  \"Conversation ID\",\n  \"Name\",\n  \"Reason\"\n]"
+      }, {
+        "name" : "expected",
+        "value" : "[\n  \"Bot Confidence%\",\n  \"Conversation ID\",\n  \"Name\",\n  \"Reason\"\n]"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "assert expected **I request you to deliver my product on Sunday** not to be null",
+      "time" : {
+        "start" : 1651481340785,
+        "stop" : 1651481340785,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "I request you to deliver my product on Sunday"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "assert expected **AGENT HANDOFF** not to be null",
+      "time" : {
+        "start" : 1651481340786,
+        "stop" : 1651481340786,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "AGENT HANDOFF"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "assert expected **{ Object (Name, Conversation ID, ...) }** to have keys **Name**, **Conversation ID**, **Bot Confidence%**, and **Reason**",
+      "time" : {
+        "start" : 1651481340786,
+        "stop" : 1651481340786,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "[\n  \"Bot Confidence%\",\n  \"Conversation ID\",\n  \"Name\",\n  \"Reason\"\n]"
+      }, {
+        "name" : "expected",
+        "value" : "[\n  \"Bot Confidence%\",\n  \"Conversation ID\",\n  \"Name\",\n  \"Reason\"\n]"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "assert expected **My cashback is not received** not to be null",
+      "time" : {
+        "start" : 1651481340787,
+        "stop" : 1651481340787,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "My cashback is not received"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "assert expected **AGENT HANDOFF** not to be null",
+      "time" : {
+        "start" : 1651481340787,
+        "stop" : 1651481340787,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "AGENT HANDOFF"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "assert expected **{ Object (Name, Conversation ID, ...) }** to have keys **Name**, **Conversation ID**, **Bot Confidence%**, and **Reason**",
+      "time" : {
+        "start" : 1651481340787,
+        "stop" : 1651481340787,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "[\n  \"Bot Confidence%\",\n  \"Conversation ID\",\n  \"Name\",\n  \"Reason\"\n]"
+      }, {
+        "name" : "expected",
+        "value" : "[\n  \"Bot Confidence%\",\n  \"Conversation ID\",\n  \"Name\",\n  \"Reason\"\n]"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "assert expected **/register_complaint{\"complaint_type\":\"Cancel order\",\"user_complaint\":\"I placed this order by mistake\"}** not to be null",
+      "time" : {
+        "start" : 1651481340788,
+        "stop" : 1651481340788,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "/register_complaint{\"complaint_type\":\"Cancel order\",\"user_complaint\":\"I placed this order by mistake\"}"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "assert expected **AGENT HANDOFF** not to be null",
+      "time" : {
+        "start" : 1651481340788,
+        "stop" : 1651481340788,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "AGENT HANDOFF"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "assert expected **200** to equal **200**",
+      "time" : {
+        "start" : 1651481340788,
+        "stop" : 1651481340788,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "200"
+      }, {
+        "name" : "expected",
+        "value" : "200"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "e898ec4c47fa3932",
+      "name" : "video recording",
+      "source" : "e898ec4c47fa3932.mp4",
+      "type" : "video/mp4",
+      "size" : 357427
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 17,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "get bot failing data for WSS"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "63c7bccd013279ca",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651480256786,
+        "stop" : 1651480259196,
+        "duration" : 2410
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2761f7a56a2affd7.json",
+  "parameterValues" : [ ]
+}

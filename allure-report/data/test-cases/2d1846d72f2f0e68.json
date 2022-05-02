@@ -1,0 +1,93 @@
+{
+  "uid" : "2d1846d72f2f0e68",
+  "name" : "get  user Intent Breakdown for WSS",
+  "fullName" : "get  user Intent Breakdown for WSS",
+  "historyId" : "75b98f084a2988add366438474ed69e2",
+  "time" : {
+    "start" : 1651481291727,
+    "stop" : 1651481296328,
+    "duration" : 4601
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 1,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "GET 200 https://limekit.limechat.ai/bot_performance/user_intent_breakdown/",
+      "time" : {
+        "start" : 1651481291835,
+        "stop" : 1651481295427,
+        "duration" : 3592
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "log {\"Cancel Order\":3.95,\"Complaint\":4.32,\"Deals and Offers\":2.47,\"Find Products\":46.67,\"Post Order Changes\":0.99,\"Refund Order\":0.12,\"Talk to Agent\":4.2,\"Track Order\":27.65,\"User sends image to Bot\":9.63}",
+      "time" : {
+        "start" : 1651481296259,
+        "stop" : 1651481296323,
+        "duration" : 64
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "793b6c5cce0812e2",
+      "name" : "video recording",
+      "source" : "793b6c5cce0812e2.mp4",
+      "type" : "video/mp4",
+      "size" : 417698
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "get user_intent_breakdown for WSS"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "873b9930e994122e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651480209186,
+        "stop" : 1651480213482,
+        "duration" : 4296
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2d1846d72f2f0e68.json",
+  "parameterValues" : [ ]
+}

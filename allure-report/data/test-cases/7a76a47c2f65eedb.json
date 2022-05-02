@@ -1,0 +1,679 @@
+{
+  "uid" : "7a76a47c2f65eedb",
+  "name" : "get inbox list data",
+  "fullName" : "get inbox list data",
+  "historyId" : "168cd2acda66eac4ee379401d24893bf",
+  "time" : {
+    "start" : 1651478661388,
+    "stop" : 1651478665617,
+    "duration" : 4229
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "GET 200 https://stgapp.limechat.ai/api/v1/accounts/61/inboxes/no_policy",
+      "time" : {
+        "start" : 1651478661504,
+        "stop" : 1651478661895,
+        "duration" : 391
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "task dbQuery, {query: select name from inboxes where id = 150;}",
+      "time" : {
+        "start" : 1651478661943,
+        "stop" : 1651478662133,
+        "duration" : 190
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "assert expected **[{\"name\":\"3qidj01s3u81buy TestAPI\"}]** to include **3qidj01s3u81buy TestAPI**",
+      "time" : {
+        "start" : 1651478662159,
+        "stop" : 1651478662159,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "[{\"name\":\"3qidj01s3u81buy TestAPI\"}]"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "task dbQuery, {query: select name from inboxes where id = 153;}",
+      "time" : {
+        "start" : 1651478662159,
+        "stop" : 1651478662363,
+        "duration" : 204
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "assert expected **[{\"name\":\"4s3hs2mpnlqufbf TestAPI\"}]** to include **4s3hs2mpnlqufbf TestAPI**",
+      "time" : {
+        "start" : 1651478662440,
+        "stop" : 1651478662440,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "[{\"name\":\"4s3hs2mpnlqufbf TestAPI\"}]"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "task dbQuery, {query: select name from inboxes where id = 161;}",
+      "time" : {
+        "start" : 1651478662448,
+        "stop" : 1651478662648,
+        "duration" : 200
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "assert expected **[{\"name\":\"5kayqslq5hptula TestAPI\"}]** to include **5kayqslq5hptula TestAPI**",
+      "time" : {
+        "start" : 1651478662679,
+        "stop" : 1651478662679,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "[{\"name\":\"5kayqslq5hptula TestAPI\"}]"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "task dbQuery, {query: select name from inboxes where id = 164;}",
+      "time" : {
+        "start" : 1651478662680,
+        "stop" : 1651478662884,
+        "duration" : 204
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "assert expected **[{\"name\":\"6t0lrchwkdz2bvd TestAPI\"}]** to include **6t0lrchwkdz2bvd TestAPI**",
+      "time" : {
+        "start" : 1651478662899,
+        "stop" : 1651478662899,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "[{\"name\":\"6t0lrchwkdz2bvd TestAPI\"}]"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "task dbQuery, {query: select name from inboxes where id = 148;}",
+      "time" : {
+        "start" : 1651478662900,
+        "stop" : 1651478663060,
+        "duration" : 160
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "assert expected **[{\"name\":\"8863iu8a1f4yfd3 TestAPI\"}]** to include **8863iu8a1f4yfd3 TestAPI**",
+      "time" : {
+        "start" : 1651478663069,
+        "stop" : 1651478663070,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "[{\"name\":\"8863iu8a1f4yfd3 TestAPI\"}]"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "task dbQuery, {query: select name from inboxes where id = 152;}",
+      "time" : {
+        "start" : 1651478663070,
+        "stop" : 1651478663230,
+        "duration" : 160
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "assert expected **[{\"name\":\"8cmvvxyhi1wecpy TestAPI\"}]** to include **8cmvvxyhi1wecpy TestAPI**",
+      "time" : {
+        "start" : 1651478663244,
+        "stop" : 1651478663244,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "[{\"name\":\"8cmvvxyhi1wecpy TestAPI\"}]"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "task dbQuery, {query: select name from inboxes where id = 163;}",
+      "time" : {
+        "start" : 1651478663245,
+        "stop" : 1651478663426,
+        "duration" : 181
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "assert expected **[{\"name\":\"a72s3rtjqduaaql TestAPI\"}]** to include **a72s3rtjqduaaql TestAPI**",
+      "time" : {
+        "start" : 1651478663436,
+        "stop" : 1651478663436,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "[{\"name\":\"a72s3rtjqduaaql TestAPI\"}]"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "task dbQuery, {query: select name from inboxes where id = 145;}",
+      "time" : {
+        "start" : 1651478663437,
+        "stop" : 1651478663624,
+        "duration" : 187
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "assert expected **[{\"name\":\"ALC_QA_Automation\"}]** to include **ALC_QA_Automation**",
+      "time" : {
+        "start" : 1651478663640,
+        "stop" : 1651478663640,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "[{\"name\":\"ALC_QA_Automation\"}]"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "task dbQuery, {query: select name from inboxes where id = 143;}",
+      "time" : {
+        "start" : 1651478663641,
+        "stop" : 1651478663845,
+        "duration" : 204
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "assert expected **[{\"name\":\"dt1p0xpvhsvyhhf TestAPI\"}]** to include **dt1p0xpvhsvyhhf TestAPI**",
+      "time" : {
+        "start" : 1651478663861,
+        "stop" : 1651478663861,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "[{\"name\":\"dt1p0xpvhsvyhhf TestAPI\"}]"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "task dbQuery, {query: select name from inboxes where id = 147;}",
+      "time" : {
+        "start" : 1651478663863,
+        "stop" : 1651478664029,
+        "duration" : 166
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "assert expected **[{\"name\":\"gupshup_QA_Automation\"}]** to include **gupshup_QA_Automation**",
+      "time" : {
+        "start" : 1651478664082,
+        "stop" : 1651478664082,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "[{\"name\":\"gupshup_QA_Automation\"}]"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "task dbQuery, {query: select name from inboxes where id = 168;}",
+      "time" : {
+        "start" : 1651478664084,
+        "stop" : 1651478664252,
+        "duration" : 168
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "assert expected **[{\"name\":\"rui07ol4ndrua6v TestAPI\"}]** to include **rui07ol4ndrua6v TestAPI**",
+      "time" : {
+        "start" : 1651478664286,
+        "stop" : 1651478664287,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "[{\"name\":\"rui07ol4ndrua6v TestAPI\"}]"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "task dbQuery, {query: select name from inboxes where id = 149;}",
+      "time" : {
+        "start" : 1651478664293,
+        "stop" : 1651478664461,
+        "duration" : 168
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "assert expected **[{\"name\":\"tydnaindep41fi0 TestAPI\"}]** to include **tydnaindep41fi0 TestAPI**",
+      "time" : {
+        "start" : 1651478664480,
+        "stop" : 1651478664480,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "[{\"name\":\"tydnaindep41fi0 TestAPI\"}]"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "task dbQuery, {query: select name from inboxes where id = 154;}",
+      "time" : {
+        "start" : 1651478664481,
+        "stop" : 1651478664641,
+        "duration" : 160
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "assert expected **[{\"name\":\"uflnhzyieqms03y TestAPI\"}]** to include **uflnhzyieqms03y TestAPI**",
+      "time" : {
+        "start" : 1651478664672,
+        "stop" : 1651478664672,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "[{\"name\":\"uflnhzyieqms03y TestAPI\"}]"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "task dbQuery, {query: select name from inboxes where id = 151;}",
+      "time" : {
+        "start" : 1651478664673,
+        "stop" : 1651478664851,
+        "duration" : 178
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "assert expected **[{\"name\":\"vtje4f7tacnxz3z TestAPI\"}]** to include **vtje4f7tacnxz3z TestAPI**",
+      "time" : {
+        "start" : 1651478664874,
+        "stop" : 1651478664875,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "[{\"name\":\"vtje4f7tacnxz3z TestAPI\"}]"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "task dbQuery, {query: select name from inboxes where id = 165;}",
+      "time" : {
+        "start" : 1651478664877,
+        "stop" : 1651478665060,
+        "duration" : 183
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "assert expected **[{\"name\":\"w35hulpbfmv8by7 TestAPI\"}]** to include **w35hulpbfmv8by7 TestAPI**",
+      "time" : {
+        "start" : 1651478665070,
+        "stop" : 1651478665070,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "[{\"name\":\"w35hulpbfmv8by7 TestAPI\"}]"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "task dbQuery, {query: select name from inboxes where id = 167;}",
+      "time" : {
+        "start" : 1651478665070,
+        "stop" : 1651478665245,
+        "duration" : 175
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "assert expected **[{\"name\":\"x029ezbh0d89jnz TestAPI\"}]** to include **x029ezbh0d89jnz TestAPI**",
+      "time" : {
+        "start" : 1651478665255,
+        "stop" : 1651478665255,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "[{\"name\":\"x029ezbh0d89jnz TestAPI\"}]"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "task dbQuery, {query: select name from inboxes where id = 169;}",
+      "time" : {
+        "start" : 1651478665256,
+        "stop" : 1651478665438,
+        "duration" : 182
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "assert expected **[{\"name\":\"xsknq83bwx8dppr TestAPI\"}]** to include **xsknq83bwx8dppr TestAPI**",
+      "time" : {
+        "start" : 1651478665445,
+        "stop" : 1651478665445,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "[{\"name\":\"xsknq83bwx8dppr TestAPI\"}]"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "task dbQuery, {query: select name from inboxes where id = 162;}",
+      "time" : {
+        "start" : 1651478665446,
+        "stop" : 1651478665600,
+        "duration" : 154
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "assert expected **[{\"name\":\"yzb8q8gn9w1hmvw TestAPI\"}]** to include **yzb8q8gn9w1hmvw TestAPI**",
+      "time" : {
+        "start" : 1651478665607,
+        "stop" : 1651478665607,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "[{\"name\":\"yzb8q8gn9w1hmvw TestAPI\"}]"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "assert expected **200** to equal **200**",
+      "time" : {
+        "start" : 1651478665607,
+        "stop" : 1651478665607,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "200"
+      }, {
+        "name" : "expected",
+        "value" : "200"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 38,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "get inbox list"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "7a76a47c2f65eedb.json",
+  "parameterValues" : [ ]
+}

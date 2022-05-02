@@ -1,0 +1,83 @@
+{
+  "uid" : "2c18f2575ef172f6",
+  "name" : "get overall agent performance status",
+  "fullName" : "get overall agent performance status",
+  "historyId" : "2a62f9295ad4c886b306c169beb4063e",
+  "time" : {
+    "start" : 1651480083376,
+    "stop" : 1651480085024,
+    "duration" : 1648
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "GET 200 https://limekit.limechat.ai/agent-performance/periodicagentsperformance/",
+      "time" : {
+        "start" : 1651480083499,
+        "stop" : 1651480084425,
+        "duration" : 926
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "log {\"yaxis\":[{\"name\":\"First Response Time\",\"data\":[]},{\"name\":\"Resolution Time\",\"data\":[]},{\"name\":\"No of Tickets\",\"data\":[]},{\"name\":\"Wait Time\",\"data\":[]}],\"xaxis\":[]}",
+      "time" : {
+        "start" : 1651480084796,
+        "stop" : 1651480085005,
+        "duration" : 209
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "9350703b6a8d5859",
+      "name" : "video recording",
+      "source" : "9350703b6a8d5859.mp4",
+      "type" : "video/mp4",
+      "size" : 236775
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "get overall agent performance status "
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2c18f2575ef172f6.json",
+  "parameterValues" : [ ]
+}

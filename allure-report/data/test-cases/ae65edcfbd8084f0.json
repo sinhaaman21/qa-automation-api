@@ -1,0 +1,109 @@
+{
+  "uid" : "ae65edcfbd8084f0",
+  "name" : "get overall agent performance status",
+  "fullName" : "get overall agent performance status",
+  "historyId" : "2a62f9295ad4c886b306c169beb4063e",
+  "time" : {
+    "start" : 1651481106537,
+    "stop" : 1651481108515,
+    "duration" : 1978
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 3,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "GET 200 https://limekit.limechat.ai/agent-performance/periodicagentsperformance/",
+      "time" : {
+        "start" : 1651481106606,
+        "stop" : 1651481107623,
+        "duration" : 1017
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "log {\"yaxis\":[{\"name\":\"First Response Time\",\"data\":[]},{\"name\":\"Resolution Time\",\"data\":[]},{\"name\":\"No of Tickets\",\"data\":[]},{\"name\":\"Wait Time\",\"data\":[]}],\"xaxis\":[]}",
+      "time" : {
+        "start" : 1651481108236,
+        "stop" : 1651481108449,
+        "duration" : 213
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "f9a696e6e70940ee",
+      "name" : "video recording",
+      "source" : "f9a696e6e70940ee.mp4",
+      "type" : "video/mp4",
+      "size" : 251832
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "get overall agent performance status "
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "deffc5a0c2e005d5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651481096451,
+        "stop" : 1651481097689,
+        "duration" : 1238
+      }
+    }, {
+      "uid" : "2c18f2575ef172f6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651480083376,
+        "stop" : 1651480085024,
+        "duration" : 1648
+      }
+    }, {
+      "uid" : "48f44a0d6a37c2cc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651480073783,
+        "stop" : 1651480075390,
+        "duration" : 1607
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ae65edcfbd8084f0.json",
+  "parameterValues" : [ ]
+}

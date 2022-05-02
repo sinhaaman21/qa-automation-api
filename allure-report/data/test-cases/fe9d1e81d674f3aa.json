@@ -1,0 +1,83 @@
+{
+  "uid" : "fe9d1e81d674f3aa",
+  "name" : "get  channel Distribution for WSS",
+  "fullName" : "get  channel Distribution for WSS",
+  "historyId" : "b92f0c481b38c028c7e3bac10c754e29",
+  "time" : {
+    "start" : 1651480267586,
+    "stop" : 1651480275728,
+    "duration" : 8142
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "GET 200 https://limekit.limechat.ai/user_insights/handoff_by_flows/",
+      "time" : {
+        "start" : 1651480267672,
+        "stop" : 1651480275377,
+        "duration" : 7705
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "log {\"values\":[98,34,15],\"labels\":[\"Complaint Flow\",\"Product Flow\",\"Order Tracking Flow\"]}",
+      "time" : {
+        "start" : 1651480275617,
+        "stop" : 1651480275721,
+        "duration" : 104
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "39514bbe15c3aa2a",
+      "name" : "video recording",
+      "source" : "39514bbe15c3aa2a.mp4",
+      "type" : "video/mp4",
+      "size" : 396067
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "get channel_distribution for WSS"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "fe9d1e81d674f3aa.json",
+  "parameterValues" : [ ]
+}

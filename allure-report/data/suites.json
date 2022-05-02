@@ -1,0 +1,673 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "get chat",
+    "children" : [ {
+      "name" : "get chat data",
+      "uid" : "34e6f373616ec2f7",
+      "parentUid" : "2bb17b73e37cd8dfab2c0b6da102b475",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651478654944,
+        "stop" : 1651478656260,
+        "duration" : 1316
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "2bb17b73e37cd8dfab2c0b6da102b475"
+  }, {
+    "name" : "get inbox list",
+    "children" : [ {
+      "name" : "get inbox list data",
+      "uid" : "7a76a47c2f65eedb",
+      "parentUid" : "98dc94fd56f228b8a6a1c0bd74e816dc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651478661388,
+        "stop" : 1651478665617,
+        "duration" : 4229
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "98dc94fd56f228b8a6a1c0bd74e816dc"
+  }, {
+    "name" : "get lables",
+    "children" : [ {
+      "name" : "get chat lables",
+      "uid" : "e1088d06531014c2",
+      "parentUid" : "ddd2613136a48193731cf1e141bb2997",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651478670373,
+        "stop" : 1651478671980,
+        "duration" : 1607
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "ddd2613136a48193731cf1e141bb2997"
+  }, {
+    "name" : "createAccount ",
+    "children" : [ {
+      "name" : "createAccount on staging ",
+      "uid" : "682f593c5a9ef63d",
+      "parentUid" : "46b41f9c8723ca6ae753cde13af4bcbc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651478676790,
+        "stop" : 1651478678077,
+        "duration" : 1287
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "46b41f9c8723ca6ae753cde13af4bcbc"
+  }, {
+    "name" : "Attendance ",
+    "children" : [ {
+      "name" : "Agent Attendance ",
+      "uid" : "1c00e91b0ebd75d0",
+      "parentUid" : "6437540fc9e7ac829e05128ffe3e8331",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651478689862,
+        "stop" : 1651478690482,
+        "duration" : 620
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "6437540fc9e7ac829e05128ffe3e8331"
+  }, {
+    "name" : "post message to gupshupEnterprise ",
+    "children" : [ {
+      "name" : "post message ",
+      "uid" : "3638f379439e0df3",
+      "parentUid" : "1607ca37383469ceadd0c2bfce3bd278",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651478702080,
+        "stop" : 1651478702569,
+        "duration" : 489
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "1607ca37383469ceadd0c2bfce3bd278"
+  }, {
+    "name" : "post inbox ",
+    "children" : [ {
+      "name" : "post inbox ",
+      "uid" : "cee9c06ec810d1e",
+      "parentUid" : "56d45521cf181aca09c8dea135dd0a1e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651478707375,
+        "stop" : 1651478708434,
+        "duration" : 1059
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "56d45521cf181aca09c8dea135dd0a1e"
+  }, {
+    "name" : "login ",
+    "children" : [ {
+      "name" : "login to stageApp ",
+      "uid" : "16a2527a534a93b5",
+      "parentUid" : "f0c24a322d56d752fd8e16e2a617c212",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651478713196,
+        "stop" : 1651478714126,
+        "duration" : 930
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "f0c24a322d56d752fd8e16e2a617c212"
+  }, {
+    "name" : "Post Notification",
+    "children" : [ {
+      "name" : "posting notification",
+      "uid" : "d20fd6a4e2fa2733",
+      "parentUid" : "28bd9768213be43ddcd3d39448822631",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651478719239,
+        "stop" : 1651478719723,
+        "duration" : 484
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "28bd9768213be43ddcd3d39448822631"
+  }, {
+    "name" : "send card",
+    "children" : [ {
+      "name" : "post send card",
+      "uid" : "178b4b19d20ce821",
+      "parentUid" : "3932527b589a7e08c997625130341950",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651478724477,
+        "stop" : 1651478725121,
+        "duration" : 644
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "3932527b589a7e08c997625130341950"
+  }, {
+    "name" : "Create Template ",
+    "children" : [ {
+      "name" : "Create Template ",
+      "uid" : "62195c61759840e4",
+      "parentUid" : "36e75f73dd10776099046add286985a1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651478730089,
+        "stop" : 1651478731065,
+        "duration" : 976
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "36e75f73dd10776099046add286985a1"
+  }, {
+    "name" : "post message to gupshup ",
+    "children" : [ {
+      "name" : "post message to gupshup inbox",
+      "uid" : "a26047be0655e1da",
+      "parentUid" : "12db3aebe890ea5addd51668671a5db0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651478735902,
+        "stop" : 1651478736441,
+        "duration" : 539
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 2,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "12db3aebe890ea5addd51668671a5db0"
+  }, {
+    "name" : "get agent hourly performance",
+    "children" : [ {
+      "name" : "get agent hourly performance",
+      "uid" : "760e969f5dd71889",
+      "parentUid" : "641b3c27f341577e5bb692b1efc3175b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651481064524,
+        "stop" : 1651481067588,
+        "duration" : 3064
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "641b3c27f341577e5bb692b1efc3175b"
+  }, {
+    "name" : "get overall agent performance convo state for WSS ",
+    "children" : [ {
+      "name" : "get overall agent performance convo state for WSS",
+      "uid" : "8f69aa820f03efb6",
+      "parentUid" : "213b12959b9cb3d9edbaa7e89d8cac8d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651481075552,
+        "stop" : 1651481078059,
+        "duration" : 2507
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "213b12959b9cb3d9edbaa7e89d8cac8d"
+  }, {
+    "name" : "get All agent performance for WSS ",
+    "children" : [ {
+      "name" : "get All agent performance for WSS ",
+      "uid" : "1d826e5e91fcba5",
+      "parentUid" : "083e66634301e0b2427513f9a2a59e21",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651481085516,
+        "stop" : 1651481088887,
+        "duration" : 3371
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "083e66634301e0b2427513f9a2a59e21"
+  }, {
+    "name" : "get overall agent performance status ",
+    "children" : [ {
+      "name" : "get overall agent performance status",
+      "uid" : "ae65edcfbd8084f0",
+      "parentUid" : "1b03736b1824b54c2ad74fb0a6da5123",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651481106537,
+        "stop" : 1651481108515,
+        "duration" : 1978
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 3,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "1b03736b1824b54c2ad74fb0a6da5123"
+  }, {
+    "name" : "get bot automation_percentage for WSS",
+    "children" : [ {
+      "name" : "get  bot automation Percentage for WSS",
+      "uid" : "7e35dca5c73f66d4",
+      "parentUid" : "c3c9f87b6610c124d928d427fa3688db",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651481117208,
+        "stop" : 1651481119758,
+        "duration" : 2550
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "c3c9f87b6610c124d928d427fa3688db"
+  }, {
+    "name" : "get bot performance stat_cards",
+    "children" : [ {
+      "name" : "get  bot performance stat_cards",
+      "uid" : "5226dcbe4a2d5add",
+      "parentUid" : "006cb146cd14439ec41fded1cdf6765d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651481128044,
+        "stop" : 1651481158081,
+        "duration" : 30037
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "006cb146cd14439ec41fded1cdf6765d"
+  }, {
+    "name" : "get bot conversion_rate",
+    "children" : [ {
+      "name" : "get  bot conversion Rate",
+      "uid" : "fa57bf7f44277747",
+      "parentUid" : "0b416180900a96faa4272b8e3aeb4979",
+      "status" : "failed",
+      "time" : {
+        "start" : 1651481169396,
+        "stop" : 1651481269890,
+        "duration" : 100494
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    } ],
+    "uid" : "0b416180900a96faa4272b8e3aeb4979"
+  }, {
+    "name" : "get user_intent_breakdown for WSS",
+    "children" : [ {
+      "name" : "get  user Intent Breakdown for WSS",
+      "uid" : "2d1846d72f2f0e68",
+      "parentUid" : "f3f05ed4c446f9139d4a6c57abdba136",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651481291727,
+        "stop" : 1651481296328,
+        "duration" : 4601
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "f3f05ed4c446f9139d4a6c57abdba136"
+  }, {
+    "name" : "get agent handoff status ",
+    "children" : [ {
+      "name" : "get agent handoff status",
+      "uid" : "a8cfd8ba410fba7f",
+      "parentUid" : "c13af8055a8137b38f92d3d78672fed6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651481305975,
+        "stop" : 1651481311697,
+        "duration" : 5722
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "c13af8055a8137b38f92d3d78672fed6"
+  }, {
+    "name" : "get periodic state status ",
+    "children" : [ {
+      "name" : "get periodic state",
+      "uid" : "f52a434b425858ae",
+      "parentUid" : "369e86439a6e02c1c2b6d376c2269a31",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651481319715,
+        "stop" : 1651481321404,
+        "duration" : 1689
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "369e86439a6e02c1c2b6d376c2269a31"
+  }, {
+    "name" : "get convesation status ",
+    "children" : [ {
+      "name" : "get convesation status",
+      "uid" : "47da50fdcea39e8e",
+      "parentUid" : "f12206e0ca7939f43e03220b0bf3fcd9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651481329442,
+        "stop" : 1651481330195,
+        "duration" : 753
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "get convesation status with inbox param",
+      "uid" : "efb73ad93bf24ffe",
+      "parentUid" : "f12206e0ca7939f43e03220b0bf3fcd9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651481330224,
+        "stop" : 1651481330790,
+        "duration" : 566
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "f12206e0ca7939f43e03220b0bf3fcd9"
+  }, {
+    "name" : "get bot failing data for WSS",
+    "children" : [ {
+      "name" : "get  bot failing data for WSS",
+      "uid" : "2761f7a56a2affd7",
+      "parentUid" : "f1436d5a799e68822cc006bf2aaf696e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651481338260,
+        "stop" : 1651481340793,
+        "duration" : 2533
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "f1436d5a799e68822cc006bf2aaf696e"
+  }, {
+    "name" : "get channel_distribution for WSS",
+    "children" : [ {
+      "name" : "get  channel Distribution for WSS",
+      "uid" : "d6405ac000f38ccc",
+      "parentUid" : "59541ba2e5c91de815e38ac962226cbf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651481349457,
+        "stop" : 1651481354338,
+        "duration" : 4881
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "59541ba2e5c91de815e38ac962226cbf"
+  }, {
+    "name" : "get handoff by flow for WSS",
+    "children" : [ {
+      "name" : "get  handoff by flow for WSS",
+      "uid" : "374c821f6aea66ff",
+      "parentUid" : "7fd53c7e5c47bca7c52a73d5b8ee9488",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651481362577,
+        "stop" : 1651481369794,
+        "duration" : 7217
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    } ],
+    "uid" : "7fd53c7e5c47bca7c52a73d5b8ee9488"
+  }, {
+    "name" : "get handoff_intent_breakdown for WSS",
+    "children" : [ {
+      "name" : "get  handoff_intent_breakdown for WSS",
+      "uid" : "a1a12b4fc05328d9",
+      "parentUid" : "293c4cbee50305fc989d6a8a7fa55d7b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651481377734,
+        "stop" : 1651481384692,
+        "duration" : 6958
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "293c4cbee50305fc989d6a8a7fa55d7b"
+  }, {
+    "name" : "get top complaints for WSS",
+    "children" : [ {
+      "name" : "get  top complaints for WSS",
+      "uid" : "21ee629bb2d0284f",
+      "parentUid" : "7ce734020bfb24128af2ae11c15e5862",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651481392813,
+        "stop" : 1651481409324,
+        "duration" : 16511
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "7ce734020bfb24128af2ae11c15e5862"
+  }, {
+    "name" : "get top_concerns for WSS",
+    "children" : [ {
+      "name" : "get  top_concerns for WSS",
+      "uid" : "f0e0b9e52702cb55",
+      "parentUid" : "b048cf52583c5bda3078cac6b8804aa5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651481419253,
+        "stop" : 1651481423597,
+        "duration" : 4344
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "b048cf52583c5bda3078cac6b8804aa5"
+  }, {
+    "name" : "get user activity for WSS",
+    "children" : [ {
+      "name" : "get  user activity for WSS",
+      "uid" : "1684a288f5903b81",
+      "parentUid" : "d9caf7c1c1d5ac510aa3cbf01007aa37",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651481431705,
+        "stop" : 1651481436297,
+        "duration" : 4592
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "d9caf7c1c1d5ac510aa3cbf01007aa37"
+  }, {
+    "name" : "get website entrypoint for WSS",
+    "children" : [ {
+      "name" : "get  website entrypoint for WSS",
+      "uid" : "b725deb1b87f4be5",
+      "parentUid" : "d9cbfc1d817d4e0ddabf3d72f4ef63ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651481444504,
+        "stop" : 1651481452100,
+        "duration" : 7596
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    } ],
+    "uid" : "d9cbfc1d817d4e0ddabf3d72f4ef63ae"
+  } ]
+}

@@ -1,0 +1,93 @@
+{
+  "uid" : "7e35dca5c73f66d4",
+  "name" : "get  bot automation Percentage for WSS",
+  "fullName" : "get  bot automation Percentage for WSS",
+  "historyId" : "e094ba5d07b55cc8725f3cc765e5dbcb",
+  "time" : {
+    "start" : 1651481117208,
+    "stop" : 1651481119758,
+    "duration" : 2550
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 1,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "GET 200 https://limekit.limechat.ai/bot_performance/automation_percentage/",
+      "time" : {
+        "start" : 1651481117288,
+        "stop" : 1651481119426,
+        "duration" : 2138
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "log {\"yaxis\":[{\"name\":\"Automation Percentage\",\"data\":[71.29,85.31,75.7,86.07,80.54,80.4,79.97,79.56,81.29,82.96,82.14,80.4,81.68,87.58,86.34,85.41,77.32,78.81,81.54,81.05,78.14,81.46]}],\"xaxis\":[\"2022/02/05\",\"2022/02/06\",\"2022/02/07\",\"2022/02/08\",\"2022/02/09\",\"2022/02/10\",\"2022/02/11\",\"2022/02/12\",\"2022/02/13\",\"2022/02/14\",\"2022/02/15\",\"2022/02/16\",\"2022/02/17\",\"2022/02/18\",\"2022/02/19\",\"2022/02/20\",\"2022/02/21\",\"2022/02/22\",\"2022/02/23\",\"2022/02/24\",\"2022/02/25\",\"2022/02/26\"]}",
+      "time" : {
+        "start" : 1651481119564,
+        "stop" : 1651481119698,
+        "duration" : 134
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "fb95330335e621e8",
+      "name" : "video recording",
+      "source" : "fb95330335e621e8.mp4",
+      "type" : "video/mp4",
+      "size" : 285110
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "get bot automation_percentage for WSS"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "576b0dbb42f922d6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651480092699,
+        "stop" : 1651480116141,
+        "duration" : 23442
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "7e35dca5c73f66d4.json",
+  "parameterValues" : [ ]
+}

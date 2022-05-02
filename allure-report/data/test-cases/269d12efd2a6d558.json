@@ -1,0 +1,83 @@
+{
+  "uid" : "269d12efd2a6d558",
+  "name" : "get  top complaints for WSS",
+  "fullName" : "get  top complaints for WSS",
+  "historyId" : "184fb85c8d1eb8581972a5f425018483",
+  "time" : {
+    "start" : 1651480501358,
+    "stop" : 1651480517679,
+    "duration" : 16321
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "GET 200 https://limekit.limechat.ai/user_insights/top_complaints/",
+      "time" : {
+        "start" : 1651480501443,
+        "stop" : 1651480517087,
+        "duration" : 15644
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "log [{\"Name\":\"Bad Service\",\"Complaints\":1},{\"Name\":\"I changed my mind\",\"Complaints\":34},{\"Name\":\"I placed this order by mistake\",\"Complaints\":34},{\"Name\":\"My delivery address is incorrect\",\"Complaints\":10},{\"Name\":\"I expected a faster delivery\",\"Complaints\":9},{\"Name\":\"Other reasons\",\"Complaints\":8},{\"Name\":\"Defective Product\",\"Complaints\":6},{\"Name\":\"Order Delivery\",\"Complaints\":6},{\"Name\":\"Received a damaged product\",\"Complaints\":2},{\"Name\":\"Received the wrong item\",\"Complaints\":2}]",
+      "time" : {
+        "start" : 1651480517629,
+        "stop" : 1651480517673,
+        "duration" : 44
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "275cb833d6ae32b9",
+      "name" : "video recording",
+      "source" : "275cb833d6ae32b9.mp4",
+      "type" : "video/mp4",
+      "size" : 646725
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "get top complaints for WSS"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "269d12efd2a6d558.json",
+  "parameterValues" : [ ]
+}

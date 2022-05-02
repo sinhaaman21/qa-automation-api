@@ -1,0 +1,101 @@
+{
+  "uid" : "a26047be0655e1da",
+  "name" : "post message to gupshup inbox",
+  "fullName" : "post message to gupshup inbox",
+  "historyId" : "b3887f7817c053a3dd6aec998938f4b7",
+  "time" : {
+    "start" : 1651478735902,
+    "stop" : 1651478736441,
+    "duration" : 539
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 2,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST 204 https://stgapp.limechat.ai/whatsapp/zoko/callback?app_id=911234567777",
+      "time" : {
+        "start" : 1651478736020,
+        "stop" : 1651478736396,
+        "duration" : 376
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "assert expected **204** to equal **204**",
+      "time" : {
+        "start" : 1651478736430,
+        "stop" : 1651478736430,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "204"
+      }, {
+        "name" : "expected",
+        "value" : "204"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "post message to gupshup "
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "877a7d277e9fcf6a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651478695865,
+        "stop" : 1651478696902,
+        "duration" : 1037
+      }
+    }, {
+      "uid" : "fb6a98aa5ea827b8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651478683665,
+        "stop" : 1651478684650,
+        "duration" : 985
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a26047be0655e1da.json",
+  "parameterValues" : [ ]
+}

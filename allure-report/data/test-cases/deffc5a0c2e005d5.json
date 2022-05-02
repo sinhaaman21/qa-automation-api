@@ -1,0 +1,83 @@
+{
+  "uid" : "deffc5a0c2e005d5",
+  "name" : "get overall agent performance status",
+  "fullName" : "get overall agent performance status",
+  "historyId" : "2a62f9295ad4c886b306c169beb4063e",
+  "time" : {
+    "start" : 1651481096451,
+    "stop" : 1651481097689,
+    "duration" : 1238
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "GET 200 https://limekit.limechat.ai/agent-performance/overallagentperformance/",
+      "time" : {
+        "start" : 1651481096527,
+        "stop" : 1651481097164,
+        "duration" : 637
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "log {\"frt\":0,\"resolution_time\":0,\"no_of_conv\":45,\"wait_time\":0}",
+      "time" : {
+        "start" : 1651481097530,
+        "stop" : 1651481097632,
+        "duration" : 102
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "d18c258a0e619673",
+      "name" : "video recording",
+      "source" : "d18c258a0e619673.mp4",
+      "type" : "video/mp4",
+      "size" : 223840
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "get overall agent performance status "
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "deffc5a0c2e005d5.json",
+  "parameterValues" : [ ]
+}

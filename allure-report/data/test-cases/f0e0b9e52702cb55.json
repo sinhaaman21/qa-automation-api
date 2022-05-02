@@ -1,0 +1,93 @@
+{
+  "uid" : "f0e0b9e52702cb55",
+  "name" : "get  top_concerns for WSS",
+  "fullName" : "get  top_concerns for WSS",
+  "historyId" : "8b55741593b42961b76c15bf608a8fd2",
+  "time" : {
+    "start" : 1651481419253,
+    "stop" : 1651481423597,
+    "duration" : 4344
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 1,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "GET 200 https://limekit.limechat.ai/user_insights/top_concerns/",
+      "time" : {
+        "start" : 1651481419328,
+        "stop" : 1651481422571,
+        "duration" : 3243
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "log [{\"Name\":\"Skin Care\",\"Concerns\":92},{\"Name\":\"Hair Care\",\"Concerns\":72},{\"Name\":\"Body Care\",\"Concerns\":50}]",
+      "time" : {
+        "start" : 1651481423470,
+        "stop" : 1651481423590,
+        "duration" : 120
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "67b1dcbddf4a2543",
+      "name" : "video recording",
+      "source" : "67b1dcbddf4a2543.mp4",
+      "type" : "video/mp4",
+      "size" : 268280
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "get top_concerns for WSS"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "2bf9c808b04932d3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651480526867,
+        "stop" : 1651480530876,
+        "duration" : 4009
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f0e0b9e52702cb55.json",
+  "parameterValues" : [ ]
+}

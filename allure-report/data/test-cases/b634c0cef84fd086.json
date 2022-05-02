@@ -1,0 +1,83 @@
+{
+  "uid" : "b634c0cef84fd086",
+  "name" : "get All agent performance for WSS ",
+  "fullName" : "get All agent performance for WSS ",
+  "historyId" : "4c64f4c040bf8da756ed965423f5957b",
+  "time" : {
+    "start" : 1651480061769,
+    "stop" : 1651480065244,
+    "duration" : 3475
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "GET 200 https://limekit.limechat.ai/agent-performance/allagentsperformance/",
+      "time" : {
+        "start" : 1651480061879,
+        "stop" : 1651480062731,
+        "duration" : 852
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "log [{\"name\":\"Admin\",\"frt\":0.08,\"resolution_time\":40.89,\"no_of_conv\":3,\"wait_time\":21.33},{\"name\":\"Santosh Hegde\",\"frt\":0,\"resolution_time\":0,\"no_of_conv\":12,\"wait_time\":0},{\"name\":\"Karan\",\"frt\":0,\"resolution_time\":0,\"no_of_conv\":3,\"wait_time\":0},{\"name\":\"Mohammed Naseer\",\"frt\":0,\"resolution_time\":0,\"no_of_conv\":9,\"wait_time\":0},{\"name\":\"Namratha Nanda\",\"frt\":0.26,\"resolution_time\":2.52,\"no_of_conv\":806,\"wait_time\":21.83},{\"name\":\"Farah Siddiqua\",\"frt\":2.95,\"resolution_time\":5.38,\"no_of_conv\":999,\"wait_time\":61.28},{\"name\":\"Afra Noorain\",\"frt\":11.93,\"resolution_time\":13.28,\"no_of_conv\":196,\"wait_time\":0.09},{\"name\":\"Gaurav\",\"frt\":0,\"resolution_time\":0,\"no_of_conv\":15,\"wait_time\":0},{\"name\":\"kavitha R\",\"frt\":0,\"resolution_time\":0,\"no_of_conv\":1,\"wait_time\":0},{\"name\":\"Pavan Chowdhary\",\"frt\":0,\"resolution_time\":0,\"no_of_conv\":2,\"wait_time\":0},{\"name\":\"John\",\"frt\":8.04,\"resolution_time\":10.41,\"no_of_conv\":535,\"wait_time\":24.77},{\"name\":\"Praveen Nair\",\"frt\":0,\"resolution_time\":0,\"no_of_conv\":1,\"wait_time\":0},{\"name\":\"Shammi Khan\",\"frt\":14.21,\"resolution_time\":75.04,\"no_of_conv\":2317,\"wait_time\":80.48},{\"name\":\"Mary Reena\",\"frt\":59.16,\"resolution_time\":68.67,\"no_of_conv\":1097,\"wait_time\":203.06},{\"name\":\"Mohammed Arshad\",\"frt\":1.59,\"resolution_time\":39.54,\"no_of_conv\":965,\"wait_time\":47.94},{\"name\":\"Ayush Dixit\",\"frt\":1.26,\"resolution_time\":2.39,\"no_of_conv\":1446,\"wait_time\":77.37},{\"name\":\"Mohammed Owaiz\",\"frt\":4.35,\"resolution_time\":15.52,\"no_of_conv\":399,\"wait_time\":59.42},{\"name\":\"Khaja Moinudeen\",\"frt\":4.16,\"resolution_time\":4.15,\"no_of_conv\":323,\"wait_time\":25.09},{\"name\":\"Shifa Noorain\",\"frt\":1.4,\"resolution_time\":1.4,\"no_of_conv\":758,\"wait_time\":21.9},{\"name\":\"Kamna\",\"frt\":0,\"resolution_time\":0,\"no_of_conv\":1,\"wait_time\":0},{\"name\":\"Tasmiya Ahmedi\",\"frt\":23.09,\"resolution_time\":32.31,\"no_of_conv\":1240,\"wait_time\":63.7},{\"name\":\"Abdul Rahman\",\"frt\":1.86,\"resolution_time\":1.64,\"no_of_conv\":113,\"wait_time\":19.05}]",
+      "time" : {
+        "start" : 1651480065188,
+        "stop" : 1651480065236,
+        "duration" : 48
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "9041269bf667fce1",
+      "name" : "video recording",
+      "source" : "9041269bf667fce1.mp4",
+      "type" : "video/mp4",
+      "size" : 316716
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "get All agent performance for WSS "
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b634c0cef84fd086.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,98 @@
+{
+  "uid" : "33761e7d22b95f8",
+  "name" : "get convesation status",
+  "fullName" : "get convesation status",
+  "historyId" : "8de2645b47661e6baabcda8301eaf196",
+  "time" : {
+    "start" : 1651480247069,
+    "stop" : 1651480247858,
+    "duration" : 789
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "GET 200 https://limekit.limechat.ai/conversation/status/",
+      "time" : {
+        "start" : 1651480247166,
+        "stop" : 1651480247504,
+        "duration" : 338
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "log {\"open\":0,\"resolved\":0,\"bot\":0,\"closed\":562,\"followup\":0,\"waiting\":0,\"outbound\":0,\"total_conv\":562,\"inbound\":562}",
+      "time" : {
+        "start" : 1651480247826,
+        "stop" : 1651480247836,
+        "duration" : 10
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "log",
+      "time" : {
+        "start" : 1651480247836,
+        "stop" : 1651480247842,
+        "duration" : 6
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "9e141eca44090390",
+      "name" : "video recording",
+      "source" : "9e141eca44090390.mp4",
+      "type" : "video/mp4",
+      "size" : 196115
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "get convesation status "
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "33761e7d22b95f8.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,137 @@
+{
+  "uid" : "fb6a98aa5ea827b8",
+  "name" : "post message to gupshup inbox",
+  "fullName" : "post message to gupshup inbox",
+  "historyId" : "b3887f7817c053a3dd6aec998938f4b7",
+  "time" : {
+    "start" : 1651478683665,
+    "stop" : 1651478684650,
+    "duration" : 985
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST 200 https://stgapp.limechat.ai/whatsapp/acl/callback",
+      "time" : {
+        "start" : 1651478683797,
+        "stop" : 1651478684282,
+        "duration" : 485
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "task dbQuery, {query: select content from messages where account_id = 61 and content like '%QA_HelloACL';}",
+      "time" : {
+        "start" : 1651478684326,
+        "stop" : 1651478684515,
+        "duration" : 189
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "assert expected **[{\"content\":\"j4knwlkskxzzxn5_QA_HelloACL\"},{\"content\":\"bbcu78p4pa7kjuh_QA_HelloACL\"},{\"content\":\"fhvng04dj1kranh_QA_HelloACL\"},{\"content\":\"zjnozyah561qd9u_QA_HelloACL\"},{\"content\":\"sw6uaikg67j3fwc_QA_HelloACL\"},{\"content\":\"np3vtodzfud07yx_QA_HelloACL\"},{\"content\":\"pkkcppltsxyste0_QA_HelloACL\"},{\"content\":\"y9yxj3z6nwtbvsm_QA_HelloACL\"},{\"content\":\"lt317rdy9amczvt_QA_HelloACL\"},{\"content\":\"2tbvlb8jvj458gg_QA_HelloACL\"},{\"content\":\"3ff2i8wbkcbstx3_QA_HelloACL\"},{\"content\":\"7dnfqb7haet518t_QA_HelloACL\"},{\"content\":\"v2ajzp3npsf31kz_QA_HelloACL\"},{\"content\":\"aalro7jktg8httd_QA_HelloACL\"},{\"content\":\"lz04ov1n6mz1g8f_QA_HelloACL\"},{\"content\":\"emlmx7z7dkv4u2u_QA_HelloACL\"},{\"content\":\"7rj76j6g4ki6k3w_QA_HelloACL\"},{\"content\":\"2px73ep7kopjpv3_QA_HelloACL\"},{\"content\":\"2c2rwc153eoa49c_QA_HelloACL\"},{\"content\":\"o14vn8qtt8lq2rq_QA_HelloACL\"}]** to include **j4knwlkskxzzxn5_QA_HelloACL**",
+      "time" : {
+        "start" : 1651478684628,
+        "stop" : 1651478684628,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "[{\"content\":\"j4knwlkskxzzxn5_QA_HelloACL\"},{\"content\":\"bbcu78p4pa7kjuh_QA_HelloACL\"},{\"content\":\"fhvng04dj1kranh_QA_HelloACL\"},{\"content\":\"zjnozyah561qd9u_QA_HelloACL\"},{\"content\":\"sw6uaikg67j3fwc_QA_HelloACL\"},{\"content\":\"np3vtodzfud07yx_QA_HelloACL\"},{\"content\":\"pkkcppltsxyste0_QA_HelloACL\"},{\"content\":\"y9yxj3z6nwtbvsm_QA_HelloACL\"},{\"content\":\"lt317rdy9amczvt_QA_HelloACL\"},{\"content\":\"2tbvlb8jvj458gg_QA_HelloACL\"},{\"content\":\"3ff2i8wbkcbstx3_QA_HelloACL\"},{\"content\":\"7dnfqb7haet518t_QA_HelloACL\"},{\"content\":\"v2ajzp3npsf31kz_QA_HelloACL\"},{\"content\":\"aalro7jktg8httd_QA_HelloACL\"},{\"content\":\"lz04ov1n6mz1g8f_QA_HelloACL\"},{\"content\":\"emlmx7z7dkv4u2u_QA_HelloACL\"},{\"content\":\"7rj76j6g4ki6k3w_QA_HelloACL\"},{\"content\":\"2px73ep7kopjpv3_QA_HelloACL\"},{\"content\":\"2c2rwc153eoa49c_QA_HelloACL\"},{\"content\":\"o14vn8qtt8lq2rq_QA_HelloACL\"}]"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "assert expected **success** to equal **success**",
+      "time" : {
+        "start" : 1651478684634,
+        "stop" : 1651478684634,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "success"
+      }, {
+        "name" : "expected",
+        "value" : "success"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "assert expected **200** to equal **200**",
+      "time" : {
+        "start" : 1651478684634,
+        "stop" : 1651478684634,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "200"
+      }, {
+        "name" : "expected",
+        "value" : "200"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "post message to gupshup "
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "fb6a98aa5ea827b8.json",
+  "parameterValues" : [ ]
+}

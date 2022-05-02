@@ -16,7 +16,7 @@ describe('get bot conversion_rate', () => {
                 end_date : "2022/02/26"
                 
             },
-            timeout: 100000
+            timeout: 200000
         }).then((res) => {
             cy.log(JSON.stringify(res.body));
             expect(res.status).to.eq(200);

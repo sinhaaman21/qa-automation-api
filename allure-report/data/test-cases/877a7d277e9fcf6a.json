@@ -1,0 +1,116 @@
+{
+  "uid" : "877a7d277e9fcf6a",
+  "name" : "post message to gupshup inbox",
+  "fullName" : "post message to gupshup inbox",
+  "historyId" : "b3887f7817c053a3dd6aec998938f4b7",
+  "time" : {
+    "start" : 1651478695865,
+    "stop" : 1651478696902,
+    "duration" : 1037
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST 204 https://stgapp.limechat.ai/whatsapp/gupshup/callback",
+      "time" : {
+        "start" : 1651478695961,
+        "stop" : 1651478696451,
+        "duration" : 490
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "task dbQuery, {query: select content from messages where account_id = 61 and content like '%QA_HelloG';}",
+      "time" : {
+        "start" : 1651478696511,
+        "stop" : 1651478696727,
+        "duration" : 216
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "assert expected **[{\"content\":\"xeri4zvw318q706_QA_HelloG\"},{\"content\":\"uk83m7r015raa3v_QA_HelloG\"},{\"content\":\"rb0f5lve4o3f1li_QA_HelloG\"},{\"content\":\"oexdfr463mwgu5o_QA_HelloG\"},{\"content\":\"nwc56vtwx3dl4fk_QA_HelloG\"},{\"content\":\"1ajia7wq8oq912j_QA_HelloG\"},{\"content\":\"hyxxmguzei0aso3_QA_HelloG\"},{\"content\":\"y4l7we8eqc65d55_QA_HelloG\"},{\"content\":\"zmh8g2iya7sqyzd_QA_HelloG\"},{\"content\":\"700spip08m1s3a4_QA_HelloG\"},{\"content\":\"k28wf28t7yh8sxv_QA_HelloG\"},{\"content\":\"5shro7zydipydgd_QA_HelloG\"},{\"content\":\"vi8sh4xpymtupod_QA_HelloG\"},{\"content\":\"fryylx6hapm37no_QA_HelloG\"},{\"content\":\"xrq820ueyz3vg2d_QA_HelloG\"},{\"content\":\"3cx9sd28env5xn2_QA_HelloG\"},{\"content\":\"cy5nfhdcpuqhnsj_QA_HelloG\"},{\"content\":\"wim6doo4p3d2bzl_QA_HelloG\"}]** to include **xeri4zvw318q706_QA_HelloG**",
+      "time" : {
+        "start" : 1651478696870,
+        "stop" : 1651478696870,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "[{\"content\":\"xeri4zvw318q706_QA_HelloG\"},{\"content\":\"uk83m7r015raa3v_QA_HelloG\"},{\"content\":\"rb0f5lve4o3f1li_QA_HelloG\"},{\"content\":\"oexdfr463mwgu5o_QA_HelloG\"},{\"content\":\"nwc56vtwx3dl4fk_QA_HelloG\"},{\"content\":\"1ajia7wq8oq912j_QA_HelloG\"},{\"content\":\"hyxxmguzei0aso3_QA_HelloG\"},{\"content\":\"y4l7we8eqc65d55_QA_HelloG\"},{\"content\":\"zmh8g2iya7sqyzd_QA_HelloG\"},{\"content\":\"700spip08m1s3a4_QA_HelloG\"},{\"content\":\"k28wf28t7yh8sxv_QA_HelloG\"},{\"content\":\"5shro7zydipydgd_QA_HelloG\"},{\"content\":\"vi8sh4xpymtupod_QA_HelloG\"},{\"content\":\"fryylx6hapm37no_QA_HelloG\"},{\"content\":\"xrq820ueyz3vg2d_QA_HelloG\"},{\"content\":\"3cx9sd28env5xn2_QA_HelloG\"},{\"content\":\"cy5nfhdcpuqhnsj_QA_HelloG\"},{\"content\":\"wim6doo4p3d2bzl_QA_HelloG\"}]"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "assert expected **204** to equal **204**",
+      "time" : {
+        "start" : 1651478696871,
+        "stop" : 1651478696871,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "204"
+      }, {
+        "name" : "expected",
+        "value" : "204"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "post message to gupshup "
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "877a7d277e9fcf6a.json",
+  "parameterValues" : [ ]
+}

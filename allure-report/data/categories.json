@@ -1,0 +1,30 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "`cy.request()` timed out waiting `100000ms` for a response from your server.\n\nThe request we sent was:\n\nMethod: GET\nURL: https://limekit.limechat.ai/bot_performance/conversion_rate/\n\nNo response was received within the timeout.\n\nhttps://on.cypress.io/request",
+      "children" : [ {
+        "name" : "get  bot conversion Rate",
+        "uid" : "fa57bf7f44277747",
+        "parentUid" : "29b3724e0c04ee85a10bee00aed3a097",
+        "status" : "failed",
+        "time" : {
+          "start" : 1651481169396,
+          "stop" : 1651481269890,
+          "duration" : 100494
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "29b3724e0c04ee85a10bee00aed3a097"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

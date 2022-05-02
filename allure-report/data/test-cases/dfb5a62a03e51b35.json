@@ -1,0 +1,78 @@
+{
+  "uid" : "dfb5a62a03e51b35",
+  "name" : "get  website entrypoint for WSS",
+  "fullName" : "get  website entrypoint for WSS",
+  "historyId" : "c04fbaa4a275c2f713827ef18e14c7e6",
+  "time" : {
+    "start" : 1651480551603,
+    "stop" : 1651480556550,
+    "duration" : 4947
+  },
+  "status" : "failed",
+  "statusMessage" : "`cy.request()` failed on:\n\nhttps://limekit.limechat.ai/user_insights/website_entrypoint/\n\nThe response we received from your web server was:\n\n  > 502: Bad Gateway\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: GET\nURL: https://limekit.limechat.ai/user_insights/website_entrypoint/\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"Authorization\": \"Bearer kJLKezZK99yzAb2k3RSoScEZ5iUGTr\",\n  \"user-agent\": \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/9.5.0 Chrome/94.0.4606.81 Electron/15.3.4 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\"\n}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 502 - Bad Gateway\nHeaders: {\n  \"content-length\": \"559\",\n  \"content-type\": \"text/html\",\n  \"date\": \"Mon, 02 May 2022 08:35:56 GMT\",\n  \"server\": \"nginx/1.21.4\"\n}\nBody: <html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>nginx/1.21.4</center>\r\n</body>\r\n</html>\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n\nhttps://on.cypress.io/request",
+  "statusTrace" : "CypressError: `cy.request()` failed on:\n\nhttps://limekit.limechat.ai/user_insights/website_entrypoint/\n\nThe response we received from your web server was:\n\n  > 502: Bad Gateway\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: GET\nURL: https://limekit.limechat.ai/user_insights/website_entrypoint/\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"Authorization\": \"Bearer kJLKezZK99yzAb2k3RSoScEZ5iUGTr\",\n  \"user-agent\": \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/9.5.0 Chrome/94.0.4606.81 Electron/15.3.4 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\"\n}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 502 - Bad Gateway\nHeaders: {\n  \"content-length\": \"559\",\n  \"content-type\": \"text/html\",\n  \"date\": \"Mon, 02 May 2022 08:35:56 GMT\",\n  \"server\": \"nginx/1.21.4\"\n}\nBody: <html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>nginx/1.21.4</center>\r\n</body>\r\n</html>\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n\nhttps://on.cypress.io/request\n    at http://localhost:63742/__cypress/runner/cypress_runner.js:160593:80\n    at tryCatcher (http://localhost:63742/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (http://localhost:63742/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (http://localhost:63742/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (http://localhost:63742/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (http://localhost:63742/__cypress/runner/cypress_runner.js:11139:18)\n    at _drainQueueStep (http://localhost:63742/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (http://localhost:63742/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:63742/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (http://localhost:63742/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:63742/__cypress/tests?p=cypress/integration/LimeKitAnalyticsAPI/userInsigntsApis/get_websiteEntrypoint.spec.js:107:8)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "`cy.request()` failed on:\n\nhttps://limekit.limechat.ai/user_insights/website_entrypoint/\n\nThe response we received from your web server was:\n\n  > 502: Bad Gateway\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: GET\nURL: https://limekit.limechat.ai/user_insights/website_entrypoint/\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"Authorization\": \"Bearer kJLKezZK99yzAb2k3RSoScEZ5iUGTr\",\n  \"user-agent\": \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/9.5.0 Chrome/94.0.4606.81 Electron/15.3.4 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\"\n}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 502 - Bad Gateway\nHeaders: {\n  \"content-length\": \"559\",\n  \"content-type\": \"text/html\",\n  \"date\": \"Mon, 02 May 2022 08:35:56 GMT\",\n  \"server\": \"nginx/1.21.4\"\n}\nBody: <html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>nginx/1.21.4</center>\r\n</body>\r\n</html>\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n\nhttps://on.cypress.io/request",
+    "statusTrace" : "CypressError: `cy.request()` failed on:\n\nhttps://limekit.limechat.ai/user_insights/website_entrypoint/\n\nThe response we received from your web server was:\n\n  > 502: Bad Gateway\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: GET\nURL: https://limekit.limechat.ai/user_insights/website_entrypoint/\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"Authorization\": \"Bearer kJLKezZK99yzAb2k3RSoScEZ5iUGTr\",\n  \"user-agent\": \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/9.5.0 Chrome/94.0.4606.81 Electron/15.3.4 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\"\n}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 502 - Bad Gateway\nHeaders: {\n  \"content-length\": \"559\",\n  \"content-type\": \"text/html\",\n  \"date\": \"Mon, 02 May 2022 08:35:56 GMT\",\n  \"server\": \"nginx/1.21.4\"\n}\nBody: <html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>nginx/1.21.4</center>\r\n</body>\r\n</html>\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n\nhttps://on.cypress.io/request\n    at http://localhost:63742/__cypress/runner/cypress_runner.js:160593:80\n    at tryCatcher (http://localhost:63742/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (http://localhost:63742/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (http://localhost:63742/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (http://localhost:63742/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (http://localhost:63742/__cypress/runner/cypress_runner.js:11139:18)\n    at _drainQueueStep (http://localhost:63742/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (http://localhost:63742/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:63742/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (http://localhost:63742/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:63742/__cypress/tests?p=cypress/integration/LimeKitAnalyticsAPI/userInsigntsApis/get_websiteEntrypoint.spec.js:107:8)",
+    "steps" : [ {
+      "name" : "GET 502 https://limekit.limechat.ai/user_insights/website_entrypoint/",
+      "time" : {
+        "start" : 1651480551679,
+        "stop" : 1651480556545,
+        "duration" : 4866
+      },
+      "status" : "failed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "f6f14a5f8b1ce168",
+      "name" : "LimeKitAnalyticsAPI/userInsigntsApis/get_websiteEntrypoint.spec.js:2022-05-02T08:35:56.308Z",
+      "source" : "f6f14a5f8b1ce168.png",
+      "type" : "image/png",
+      "size" : 63817
+    }, {
+      "uid" : "14440bb28ccb79ff",
+      "name" : "video recording",
+      "source" : "14440bb28ccb79ff.mp4",
+      "type" : "video/mp4",
+      "size" : 535235
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "get website entrypoint for WSS"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "dfb5a62a03e51b35.json",
+  "parameterValues" : [ ]
+}

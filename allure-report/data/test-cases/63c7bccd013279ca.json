@@ -1,0 +1,374 @@
+{
+  "uid" : "63c7bccd013279ca",
+  "name" : "get  bot failing data for WSS",
+  "fullName" : "get  bot failing data for WSS",
+  "historyId" : "e5ae7358d0da53440f1f7a287fe15d02",
+  "time" : {
+    "start" : 1651480256786,
+    "stop" : 1651480259196,
+    "duration" : 2410
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "GET 200 https://limekit.limechat.ai/user_insights/bot_failing_data/",
+      "time" : {
+        "start" : 1651480256948,
+        "stop" : 1651480257821,
+        "duration" : 873
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "assert expected **{ Object (Name, Conversation ID, ...) }** to have keys **Name**, **Conversation ID**, **Bot Confidence%**, and **Reason**",
+      "time" : {
+        "start" : 1651480259188,
+        "stop" : 1651480259188,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "[\n  \"Bot Confidence%\",\n  \"Conversation ID\",\n  \"Name\",\n  \"Reason\"\n]"
+      }, {
+        "name" : "expected",
+        "value" : "[\n  \"Bot Confidence%\",\n  \"Conversation ID\",\n  \"Name\",\n  \"Reason\"\n]"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "assert expected **/register_complaint{\"complaint_type\":\"Cancel order\",\"user_complaint\":\"I placed this order by mistake\"}** not to be null",
+      "time" : {
+        "start" : 1651480259188,
+        "stop" : 1651480259188,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "/register_complaint{\"complaint_type\":\"Cancel order\",\"user_complaint\":\"I placed this order by mistake\"}"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "assert expected **AGENT HANDOFF** not to be null",
+      "time" : {
+        "start" : 1651480259189,
+        "stop" : 1651480259189,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "AGENT HANDOFF"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "assert expected **{ Object (Name, Conversation ID, ...) }** to have keys **Name**, **Conversation ID**, **Bot Confidence%**, and **Reason**",
+      "time" : {
+        "start" : 1651480259189,
+        "stop" : 1651480259189,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "[\n  \"Bot Confidence%\",\n  \"Conversation ID\",\n  \"Name\",\n  \"Reason\"\n]"
+      }, {
+        "name" : "expected",
+        "value" : "[\n  \"Bot Confidence%\",\n  \"Conversation ID\",\n  \"Name\",\n  \"Reason\"\n]"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "assert expected **Please reply me \uD83E\uDD7A** not to be null",
+      "time" : {
+        "start" : 1651480259189,
+        "stop" : 1651480259189,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "Please reply me \uD83E\uDD7A"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "assert expected **AGENT HANDOFF** not to be null",
+      "time" : {
+        "start" : 1651480259189,
+        "stop" : 1651480259189,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "AGENT HANDOFF"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "assert expected **{ Object (Name, Conversation ID, ...) }** to have keys **Name**, **Conversation ID**, **Bot Confidence%**, and **Reason**",
+      "time" : {
+        "start" : 1651480259189,
+        "stop" : 1651480259189,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "[\n  \"Bot Confidence%\",\n  \"Conversation ID\",\n  \"Name\",\n  \"Reason\"\n]"
+      }, {
+        "name" : "expected",
+        "value" : "[\n  \"Bot Confidence%\",\n  \"Conversation ID\",\n  \"Name\",\n  \"Reason\"\n]"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "assert expected **/register_complaint{\"complaint_type\":\"Cancel order\",\"user_complaint\":\"I placed this order by mistake\"}** not to be null",
+      "time" : {
+        "start" : 1651480259189,
+        "stop" : 1651480259189,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "/register_complaint{\"complaint_type\":\"Cancel order\",\"user_complaint\":\"I placed this order by mistake\"}"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "assert expected **AGENT HANDOFF** not to be null",
+      "time" : {
+        "start" : 1651480259190,
+        "stop" : 1651480259190,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "AGENT HANDOFF"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "assert expected **{ Object (Name, Conversation ID, ...) }** to have keys **Name**, **Conversation ID**, **Bot Confidence%**, and **Reason**",
+      "time" : {
+        "start" : 1651480259190,
+        "stop" : 1651480259190,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "[\n  \"Bot Confidence%\",\n  \"Conversation ID\",\n  \"Name\",\n  \"Reason\"\n]"
+      }, {
+        "name" : "expected",
+        "value" : "[\n  \"Bot Confidence%\",\n  \"Conversation ID\",\n  \"Name\",\n  \"Reason\"\n]"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "assert expected **/register_complaint{\"complaint_type\":\"Cancel order\",\"user_complaint\":\"My delivery address is incorrect\"}** not to be null",
+      "time" : {
+        "start" : 1651480259190,
+        "stop" : 1651480259190,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "/register_complaint{\"complaint_type\":\"Cancel order\",\"user_complaint\":\"My delivery address is incorrect\"}"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "assert expected **AGENT HANDOFF** not to be null",
+      "time" : {
+        "start" : 1651480259190,
+        "stop" : 1651480259190,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "AGENT HANDOFF"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "assert expected **{ Object (Name, Conversation ID, ...) }** to have keys **Name**, **Conversation ID**, **Bot Confidence%**, and **Reason**",
+      "time" : {
+        "start" : 1651480259190,
+        "stop" : 1651480259191,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "[\n  \"Bot Confidence%\",\n  \"Conversation ID\",\n  \"Name\",\n  \"Reason\"\n]"
+      }, {
+        "name" : "expected",
+        "value" : "[\n  \"Bot Confidence%\",\n  \"Conversation ID\",\n  \"Name\",\n  \"Reason\"\n]"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "assert expected **Not Happy** not to be null",
+      "time" : {
+        "start" : 1651480259191,
+        "stop" : 1651480259191,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "Not Happy"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "assert expected **AGENT HANDOFF** not to be null",
+      "time" : {
+        "start" : 1651480259191,
+        "stop" : 1651480259191,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "AGENT HANDOFF"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "assert expected **200** to equal **200**",
+      "time" : {
+        "start" : 1651480259191,
+        "stop" : 1651480259191,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "200"
+      }, {
+        "name" : "expected",
+        "value" : "200"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "de7295edb9383cf4",
+      "name" : "video recording",
+      "source" : "de7295edb9383cf4.mp4",
+      "type" : "video/mp4",
+      "size" : 351590
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 17,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "get bot failing data for WSS"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "63c7bccd013279ca.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,108 @@
+{
+  "uid" : "a8cfd8ba410fba7f",
+  "name" : "get agent handoff status",
+  "fullName" : "get agent handoff status",
+  "historyId" : "a8b44d35281f6ef821156b95b2e43a9d",
+  "time" : {
+    "start" : 1651481305975,
+    "stop" : 1651481311697,
+    "duration" : 5722
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 1,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "GET 200 https://limekit.limechat.ai/conversation/agent-handoff/",
+      "time" : {
+        "start" : 1651481306059,
+        "stop" : 1651481310994,
+        "duration" : 4935
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "log {\"agent\":0,\"bot\":100}",
+      "time" : {
+        "start" : 1651481311482,
+        "stop" : 1651481311524,
+        "duration" : 42
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "log",
+      "time" : {
+        "start" : 1651481311527,
+        "stop" : 1651481311671,
+        "duration" : 144
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "73fd01058b92c7ae",
+      "name" : "video recording",
+      "source" : "73fd01058b92c7ae.mp4",
+      "type" : "video/mp4",
+      "size" : 399388
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "get agent handoff status "
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "78738e7a7fe25109",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651480221147,
+        "stop" : 1651480229230,
+        "duration" : 8083
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a8cfd8ba410fba7f.json",
+  "parameterValues" : [ ]
+}

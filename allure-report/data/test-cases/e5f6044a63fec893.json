@@ -1,0 +1,83 @@
+{
+  "uid" : "e5f6044a63fec893",
+  "name" : "get  bot conversion Rate",
+  "fullName" : "get  bot conversion Rate",
+  "historyId" : "8eec4215cc30819fa9316cfc44f5a0ff",
+  "time" : {
+    "start" : 1651480186816,
+    "stop" : 1651480200344,
+    "duration" : 13528
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "GET 200 https://limekit.limechat.ai/bot_performance/conversion_rate/",
+      "time" : {
+        "start" : 1651480186969,
+        "stop" : 1651480200199,
+        "duration" : 13230
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "log {\"yaxis\":[{\"name\":\"Conversion Rate\",\"data\":[0,218.6,638.6,124.59,227.68,134.43,152.63,436.07,549.5,1005.5,1756.67,770,909,1726,543.7,5336,1542.67,909,2766,3122,319,160.79,182.28]}],\"xaxis\":[\"2022/02/04\",\"2022/02/05\",\"2022/02/06\",\"2022/02/07\",\"2022/02/08\",\"2022/02/09\",\"2022/02/10\",\"2022/02/11\",\"2022/02/12\",\"2022/02/13\",\"2022/02/14\",\"2022/02/15\",\"2022/02/16\",\"2022/02/17\",\"2022/02/18\",\"2022/02/19\",\"2022/02/20\",\"2022/02/21\",\"2022/02/22\",\"2022/02/23\",\"2022/02/24\",\"2022/02/25\",\"2022/02/26\"]}",
+      "time" : {
+        "start" : 1651480200294,
+        "stop" : 1651480200337,
+        "duration" : 43
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "d1b62ace44bf0bda",
+      "name" : "video recording",
+      "source" : "d1b62ace44bf0bda.mp4",
+      "type" : "video/mp4",
+      "size" : 452903
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "get bot conversion_rate"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e5f6044a63fec893.json",
+  "parameterValues" : [ ]
+}

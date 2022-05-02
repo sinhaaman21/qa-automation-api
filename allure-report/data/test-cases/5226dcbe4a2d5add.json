@@ -1,0 +1,93 @@
+{
+  "uid" : "5226dcbe4a2d5add",
+  "name" : "get  bot performance stat_cards",
+  "fullName" : "get  bot performance stat_cards",
+  "historyId" : "402d01607132dd8eecdaba5f57b91c01",
+  "time" : {
+    "start" : 1651481128044,
+    "stop" : 1651481158081,
+    "duration" : 30037
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 1,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "GET 200 https://limekit.limechat.ai/bot_performance/stat_cards/",
+      "time" : {
+        "start" : 1651481128156,
+        "stop" : 1651481157873,
+        "duration" : 29717
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "log {\"bot_conversations\":20521,\"automation\":83.45,\"resolution_time\":40945.03970771629,\"conversion_rate\":0,\"bot_sales\":2855}",
+      "time" : {
+        "start" : 1651481157970,
+        "stop" : 1651481158075,
+        "duration" : 105
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "1bc283f763d2a982",
+      "name" : "video recording",
+      "source" : "1bc283f763d2a982.mp4",
+      "type" : "video/mp4",
+      "size" : 803943
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "get bot performance stat_cards"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "113dd41fec614b48",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651480125562,
+        "stop" : 1651480174502,
+        "duration" : 48940
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5226dcbe4a2d5add.json",
+  "parameterValues" : [ ]
+}
