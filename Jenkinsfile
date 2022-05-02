@@ -13,6 +13,7 @@ pipeline {
     stages {
         stage('Dependencies') {
             steps {
+                slackSend channel: 'jenkins-ci-notifier', color: '#1D8EC1', message: "Build Started: \nProject: ${env.JOB_NAME}  \n Build Number: ${env.BUILD_NUMBER} \n Build URL: ${env.BUILD_URL}"
                 sh 'npm ci'
             }
         }
