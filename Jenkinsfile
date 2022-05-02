@@ -2,6 +2,9 @@ pipeline {
     agent{
         label 'limekit'
     } 
+    options {
+        ansiColor('xterm')
+    }
     tools {
         nodejs 'node'
         allure 'allure'
