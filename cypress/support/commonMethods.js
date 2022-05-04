@@ -9,8 +9,12 @@ function randomTextFunction(testStringSuffix){
     return randomString;
 }
 
+function randomNumberFunction(prefix){
+    let randomNumber = prefix+(Math.floor(1000000000 + Math.random() * 9000000000));
+    return randomNumber;
+}
 
 export default {
     randomTextFunction,
-    
+    randomNumberFunction
 }

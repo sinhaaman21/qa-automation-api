@@ -6,6 +6,7 @@ const conversationsId = `3`;
 const flowId = `36`;
 const flowInstanceID = `369`
 const dashboardApiAccessToken = `QNL4t1EA3qzoZhDhVieUDjmz`;
+const dashboardStageAppUrl = `https://stgapp.limechat.ai/app/login`;
 let connection_flow_builder = {
     user: "postgres",
     password: "wavicle123",
@@ -35,5 +36,6 @@ export default {
     hostFlowBuilder,
     connection_dashboard,
     flowId,
-    flowInstanceID
+    flowInstanceID,
+    dashboardStageAppUrl
 };
