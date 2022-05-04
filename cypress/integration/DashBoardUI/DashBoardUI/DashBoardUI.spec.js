@@ -162,7 +162,11 @@ Then('user is navigated to inbox list page', () => {
 
 Then('user is navigated to tag list page',()=>{
     cy.url().should('include', `settings/labels/list`);
-})
+});
+
+Then('user is navigated to template list page',()=>{
+    cy.url().should('include', `settings/template/list`);
+});
 
 Then('user clicks create tag button and navigates back to tag list',()=>{
     cy.xpath(create_tag_create_button).click();
