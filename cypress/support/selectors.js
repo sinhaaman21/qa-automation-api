@@ -40,13 +40,35 @@ const create_tag_name = `//input[@placeholder="Tag name"]`;
 const create_tag_desc =`//textarea[@placeholder="Tag Description"]`;
 const create_tag_create_button = `//button[@name="Create"]`;
 const create_tag_cancel_button = `//button[contains(text(),"Cancel")]`;
-const create_template_addTemp = `//span[contains(text(),"Add Template Message")]`;
+const add_template = `//span[contains(text(),"Add Template Message")]`;
 const create_template_shortCode= `//input[@placeholder="Please enter a shortcode"]`;
 const create_template_selectInbox_dropdown = `//span[contains(text(),"Select an Inbox")]`;
 const create_template_selectInbox_dropdown_value = `//span[contains(text(),"TestQA ")]`;
 const create_template_content = `//textarea[@placeholder="Please enter a content"]`;
 const create_template_submit = `//button[@name="Submit"]`;
 const create_template_cancel = `//button[contains(text(),"Cancel")]`; 
+const settings_templates_delete = `//*[@id="app"]/div[1]/section/div/div[2]/div/div[1]/div[2]/table/tbody/tr[1]/td[5]/div/div[2]/span`;
+const settings_templates_delete_yes = `//span[contains(text(),"Yes, Delete")]`;
+const settings_templates_delete_cancel = `//button[contains(text(),"No, Keep")]`;
+const tickets_status_dropdown = `//span[@class="selected-option"]`;
+const tickets_status_dropdown_open= `//span[text()="open "]`;
+const tickets_status_dropdown_resolved = `//span[text()="resolved "]`;
+const tickets_status_dropdown_followup= `//span[text()="followup "]`;
+const tickets_status_dropdown_waiting= `//span[text()="waiting "]`;
+const tickets_status_dropdown_bot= `//span[text()="bot "]`;
+const tickets_status_dropdown_closed= `//span[text()="closed "]`;
+const tickets_status_dropdown_outbound= `//span[text()="outbound "]`;
+const settings_tickets = `//span[text()="Tickets"]`;
+const inbox_qa_gupshup_stared = `//span[contains(text(),"STARRED")]`;
+const dashboard_inboxes = `//span[contains(text(),"Inboxes")]`;
+const inbox_qa_gupshup = `//div[contains(text(),"gupshup_QA_Automation")]`;
+const inbox_qa_gupshup_reply = `//a[contains(text(),"Reply")]`;
+const inbox_qa_gupshup_textarea = `//textarea[@placeholder="Shift + enter for new line. Start with '/' to select a Canned Response."]`;
+const inbox_qa_gupshup_send = `//span[contains(text(),"Send")]`;
+const inbox_qa_gupshup_message = `//p[text()="hi"]`;
+const inbox_search=`//div[contains(text(),"Search for messages")]`;
+const inbox_search_text=`//input[@placeholder="Type any text to search messages"]`;
+const inbox_searched_conversation = `//*[@id="app"]/div[1]/section/section/div[1]/div[1]/div[2]/div/div[2]/div[2]/div/button[1]`;
 
 
 
@@ -54,10 +76,25 @@ const create_template_cancel = `//button[contains(text(),"Cancel")]`;
 
 export default {
     logout,
+    inbox_search,
+    inbox_search_text,
+    inbox_searched_conversation,
+    inbox_qa_gupshup_stared,
+    dashboard_inboxes,
+    inbox_qa_gupshup,
+    inbox_qa_gupshup_reply,
+    inbox_qa_gupshup_textarea,
+    inbox_qa_gupshup_send,
+    inbox_qa_gupshup_message,
+    settings_tickets,
+    tickets_status_dropdown,
+    settings_templates_delete,
+    settings_templates_delete_yes,
+    settings_templates_delete_cancel,
     create_template_content,
     create_template_submit,
     create_template_cancel,
-    create_template_addTemp,
+    add_template,
     create_template_shortCode,
     create_template_selectInbox_dropdown,
     create_template_selectInbox_dropdown_value,

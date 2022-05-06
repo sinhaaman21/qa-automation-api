@@ -1,6 +1,6 @@
 import { Given, When, Then, And } from 'cypress-cucumber-preprocessor/steps'
 const { dashboardStageAppUrl } = require('../../../support/constant')
-const { randomTextFunction, randomNumberFunction } = require('../../../support/commonMethods')
+const { customerSendMessage, randomTextFunction, randomNumberFunction } = require('../../../support/commonMethods')
 const {
     logout,
     add_tag,
@@ -47,10 +47,25 @@ const {
     create_template_content,
     create_template_submit,
     create_template_cancel,
-    create_template_addTemp,
+    add_template,
     create_template_shortCode,
     create_template_selectInbox_dropdown,
-    create_template_selectInbox_dropdown_value
+    create_template_selectInbox_dropdown_value,
+    settings_templates_delete,
+    settings_templates_delete_yes,
+    settings_templates_delete_cancel,
+    settings_tickets,
+    tickets_status_dropdown,
+    inbox_qa_gupshup_stared,
+    dashboard_inboxes,
+    inbox_qa_gupshup,
+    inbox_qa_gupshup_reply,
+    inbox_qa_gupshup_textarea,
+    inbox_qa_gupshup_send,
+    inbox_qa_gupshup_message,
+    inbox_search,
+    inbox_search_text,
+    inbox_searched_conversation
 } = require(`../../../support/selectors`)
 
 Cypress.on('uncaught:exception', (err, runnable) => {
@@ -75,7 +90,6 @@ And('User clicks on login button', () => {
 And ('User clicks on logout',()=>{
     cy.xpath(account_options).click({ force: true });
     cy.xpath(logout).click();
-
 });
 
 And('User clicks on account options', () => {
@@ -88,6 +102,43 @@ And('User clicks on Switch Account and list of accounts are displayed', () => {
 
 And('User selects {string} from the accounts list', (accountName) => {
     cy.xpath(account_name).click({ force: true })
+});
+
+And('User clicks on Tickets option from sidebar',()=>{
+    cy.xpath(dashboard_pullBar).click();
+    cy.xpath(settings_tickets).click({force: true});
+});
+
+And ('User clicks on inboxes option from sidebar',()=>{
+    cy.xpath(dashboard_pullBar).click();
+    cy.xpath(dashboard_inboxes).click({force: true});
+});
+
+And('User selects gupshup_QA_Automation inbox',()=>{
+    cy.xpath(inbox_qa_gupshup).click();
+});
+
+And('user selects the conversation to reply',()=>{
+    cy.xpath(inbox_qa_gupshup_stared).click();
+    customerSendMessage('Hello from customer QA Automation');
+});
+
+And('user adds the reply click send and the message is displayed in chat window',()=>{
+    const agentReply = randomTextFunction("QA Automation UI Agent reply")
+    cy.xpath(inbox_qa_gupshup_reply).click({force: true});
+    cy.xpath(inbox_qa_gupshup_textarea).type(agentReply);
+    cy.xpath(inbox_qa_gupshup_send).click({force: true});
+    cy.xpath(`//p[text()="${agentReply}"]`).length > 0;
+});
+
+And('User clicks on status {string}',(status)=>{
+    cy.xpath(tickets_status_dropdown).click();
+    cy.xpath(`//span[text()="${status} "]`).click({force: true});
+});
+
+And('User selects conversation with {string}',(status)=>{
+    cy.xpath(`//span[text()="All"]`).click()
+    cy.xpath(`//span[text()="${status}"]`).click({force: true});
 });
 
 And('User clicks on what new popup', () => {
@@ -132,8 +183,20 @@ And('User clicks on add tag option',()=>{
     cy.xpath(add_tag).click();
 });
 
+And('User clicks on add template option',()=>{
+    cy.xpath(add_template).click();
+});
+
+And('user is navigated to add template page and enters the details and clicks add template',()=>{
+    cy.xpath(create_template_shortCode).type(randomTextFunction('QAAutomationUITemplate short code'));
+    cy.xpath(create_template_selectInbox_dropdown).click();
+    cy.xpath(create_template_selectInbox_dropdown_value).click();
+    cy.xpath(create_template_content).type(randomTextFunction('QAAutomationTemplate content'));
+    cy.xpath(create_template_submit).click();
+});
+
 And ('user is navigated to add tag page and enters the details',()=>{
-    cy.xpath(create_tag_name).type(randomTextFunction('QAAutomationTag'));
+    cy.xpath(create_tag_name).type(randomTextFunction('QAAutomationTagUI'));
     cy.xpath(create_tag_desc).type(randomTextFunction('QAAutomationTagDescription'));
 
 });
@@ -151,6 +214,33 @@ And('User add agent details like {string} {string} and clicks on add agent butto
         cy.xpath(create_agent_addAgent).click();
 
     });
+
+
+And('user selects Agent and click on add agent', () => {
+    cy.xpath(select_agent_dropdown).click();
+    cy.xpath(select_agent_value).click();
+    cy.xpath(select_agent_dropdown).click();
+    cy.xpath(create_inbox_addAgent).click();
+});
+
+And('user click on delete inbox icon and confirm deletion',()=>{
+    cy.xpath(setting_inbox_delete).click();
+    cy.xpath(setting_inbox_delete_yes).click();
+
+});
+
+And('user click on delete template icon and confirm deletion',()=>{
+    cy.xpath(settings_templates_delete).click();
+    cy.xpath(settings_templates_delete_yes).click();
+});
+
+And('user click on delete agent icon and confirm deletion',()=>{
+    cy.xpath(setting_agent_delete).click();
+    cy.xpath(setting_agent_delete_yes).click();
+});
+And('user cliks on search icon and search for a message and select the conversation',()=>{
+    
+});
 
 Then('user is navigated to agent list page', () => {
     cy.url().should('include', `settings/agents/list`);
@@ -184,27 +274,12 @@ Then('User add inbox details like {string} {string} {string} and clicks on creat
         cy.xpath(create_inbox_lc).click();
     });
 
-And('user selects Agent and click on add agent', () => {
-    cy.xpath(select_agent_dropdown).click();
-    cy.xpath(select_agent_value).click();
-    cy.xpath(select_agent_dropdown).click();
-    cy.xpath(create_inbox_addAgent).click();
-});
-
-And('user click on delete inbox icon and confirm deletion',()=>{
-    cy.xpath(setting_inbox_delete).click();
-    cy.xpath(setting_inbox_delete_yes).click();
-
-});
-
-
-And('user click on delete agent icon and confirm deletion',()=>{
-    cy.xpath(setting_agent_delete).click();
-    cy.xpath(setting_agent_delete_yes).click();
-});
-
 Then('user is navigated to final page with message as {string}', (message) => {
     cy.xpath(inbox_create_sucess).should('contain.text', message);
+});
+
+Then('list of tickest for required {string} is displayed',(status)=>{
+    cy.xpath(`//span[contains(text(),"${status}")] [@class="selected-option"]`).length > 0;
 });
 
 Then('user is navigated to select agent page', () => {
@@ -233,4 +308,13 @@ Then('User is succefully navigated to dashboard login page with title as {string
 
 Then('User should navigates to Url with id as {string}', (id) => {
     cy.url().should('include', `accounts/${id}/dashboard`);
+});
+
+
+Then('conversations with {string} are displayed',(status)=>{
+    let Status1 = status.toLowerCase();
+    if(Status1=='mine')
+        {cy.url().should('include', `assignee_tab=me`);}
+    else 
+        {cy.url().should('include', `assignee_tab=${Status1}`);}   
 });
