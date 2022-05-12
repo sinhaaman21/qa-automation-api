@@ -34,22 +34,25 @@ Feature: Dashboard UI Flows
             | username          | password   | title    |
             | admin@limechat.ai | wavicle123 | LimeChat |
 
-    # Scenario Outline: agent login to dashboard-> Inbox and search for a message
 
-    #     Given User is at the dashboard login page
-    #     When User enters username as '<username>' and password as '<password>'
-    #     And User clicks on login button
-    #     And User clicks on what new popup
-    #     And User clicks on account options
-    #     And User clicks on Switch Account and list of accounts are displayed
-    #     And User selects '<accountName>' from the accounts list
-    #     Then User should navigates to Url with id as '<id>'
-    #     And User clicks on inboxes option from sidebar
-    #     And user cliks on search icon and search for a message and select the conversation
-    #     Then user is navigated to conversation list page
-    #     Examples:
-    #         | username          | password   | accountName   | id |
-    #         | admin@limechat.ai | wavicle123 | QA Automation | 61 |        
+    
+
+    Scenario Outline: agent login to dashboard-> Inbox and search for a message
+
+        Given User is at the dashboard login page
+        When User enters username as '<username>' and password as '<password>'
+        And User clicks on login button
+        And User clicks on what new popup
+        And User clicks on account options
+        And User clicks on Switch Account and list of accounts are displayed
+        And User selects '<accountName>' from the accounts list
+        Then User should navigates to Url with id as '<id>'
+        And User clicks on inboxes option from sidebar
+        And user cliks on search icon and search for a message and select the conversation
+        Then user is navigated to conversation list page
+        Examples:
+            | username          | password   | accountName   | id |
+            | admin@limechat.ai | wavicle123 | QA Automation | 61 |        
 
     Scenario Outline: agent login to dashboard and check different conversations 
 

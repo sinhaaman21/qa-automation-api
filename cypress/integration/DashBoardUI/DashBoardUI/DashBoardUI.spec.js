@@ -239,8 +239,14 @@ And('user click on delete agent icon and confirm deletion',()=>{
     cy.xpath(setting_agent_delete_yes).click();
 });
 And('user cliks on search icon and search for a message and select the conversation',()=>{
-    
+    cy.xpath(inbox_search).click();
+    cy.xpath(inbox_search_text).type('Automation');
+    cy.xpath(inbox_searched_conversation).click();
 });
+
+Then('user is navigated to conversation list page',()=>{
+    cy.url().should('include', `/conversations`);
+})
 
 Then('user is navigated to agent list page', () => {
     cy.url().should('include', `settings/agents/list`);
