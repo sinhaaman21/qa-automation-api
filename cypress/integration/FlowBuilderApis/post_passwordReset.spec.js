@@ -44,9 +44,9 @@ describe('password_reset on flowBuilder stage ', () => {
                     expect(res.status).to.eq(200);
                     cy.request({
                         method: 'POST',
-                        url: `https://flow-builder-stg.limechat.ai/auth/password_new/${token1}`,
+                        url: `https://flow-builder-stg.limechat.ai/auth/password_reset`,
                         body: {
-                           
+                           "token" : token1,
                             "password": payload1.password,
                             "confirm_password": payload1.confirm_password
                         }
@@ -98,9 +98,9 @@ describe('password_reset on flowBuilder stage ', () => {
                     expect(res.status).to.eq(200);
                     cy.request({
                         method: 'POST',
-                        url: `https://flow-builder-stg.limechat.ai/auth/password_new/${token1}`,
+                        url: `https://flow-builder-stg.limechat.ai/auth/password_reset`,
                         body: {
-                          
+                            "token" : token1,
                             "password": payload1.password,
                             "confirm_password": payload1.Inconfirm_password
                         },
@@ -154,7 +154,7 @@ describe('password_reset on flowBuilder stage ', () => {
                     expect(res.status).to.eq(200);
                     cy.request({
                         method: 'POST',
-                        url: `https://flow-builder-stg.limechat.ai/auth/password_new/junkToken`,
+                        url: `https://flow-builder-stg.limechat.ai/auth/password_reset`,
                         body: {
                             "token": "junkToken",
                             "password": payload1.password,
