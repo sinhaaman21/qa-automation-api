@@ -3,11 +3,21 @@ const { dashboardStageAppUrl } = require('../../../support/constant')
 const { customerSendMessage, randomTextFunction, randomNumberFunction } = require('../../../support/commonMethods')
 const {
     logout,
+    inbox_qa_gupshup_notes,
+    inbox_qa_gupshup_qa4,
+    inbox_qa_gupshup_addtags,
+    inbox_qa_gupshup_selectTag,
+    inbox_qa_gupshup_selectTag_close,
+    inbox_qa_gupshup_template,
+    inbox_qa_gupshup_notes_textarea,
+    inbox_qa_gupshup_notes_save,
+    inbox_qa_gupshup_template_select,
     add_tag,
+    inbox_assigned_all,
     dashboard_settings,
     settings_agents,
     settings_templates,
-    login_next,
+    login_whatsNew_cancel,
     login_gotIt,
     account_name,
     switch_account,
@@ -65,7 +75,14 @@ const {
     inbox_qa_gupshup_message,
     inbox_search,
     inbox_search_text,
-    inbox_searched_conversation
+    inbox_searched_conversation,
+    inbox_qa_gupshup_contactEdit,
+    inbox_qa_gupshup_contactEdit_email,
+    inbox_qa_gupshup_contactEdit_Bio,
+    inbox_qa_gupshup_contactEdit_submit,
+    inbox_qa_gupshup_contactEdit_close,
+    inbox_qa_gupshup_previousTickets,
+    inbox_qa_gupshup_previousTickets_select,
 } = require(`../../../support/selectors`)
 
 Cypress.on('uncaught:exception', (err, runnable) => {
@@ -114,16 +131,41 @@ And ('User clicks on inboxes option from sidebar',()=>{
     cy.xpath(dashboard_inboxes).click({force: true});
 });
 
-And('User selects gupshup_QA_Automation inbox',()=>{
+And('User selects QA_GE_Automation inbox',()=>{
     cy.xpath(inbox_qa_gupshup).click();
 });
 
-And('user selects the conversation to reply',()=>{
+And('user selects the conversation QA',()=>{
+    cy.xpath(inbox_assigned_all).click();
+    cy.xpath(inbox_qa_gupshup_qa4).click();
+    customerSendMessage('Hello from customer QA Automation for tag','917299869184');
+})
+
+And('user selects the conversation',()=>{
+    cy.xpath(inbox_assigned_all).click();
     cy.xpath(inbox_qa_gupshup_stared).click();
-    customerSendMessage('Hello from customer QA Automation');
+    customerSendMessage('Hello from customer QA Automation','917299869181');
 });
 
-And('user adds the reply click send and the message is displayed in chat window',()=>{
+And('user clicks on edit contact',()=>{
+    cy.xpath(inbox_qa_gupshup_contactEdit).click();
+});
+
+Then('user add details and close',()=>{
+    cy.xpath(inbox_qa_gupshup_contactEdit_email).type(randomTextFunction('@QAUiEmail'));
+    cy.xpath(inbox_qa_gupshup_contactEdit_Bio).type(randomTextFunction('QABio'));
+    cy.xpath(inbox_qa_gupshup_contactEdit_submit).click();
+    cy.xpath(inbox_qa_gupshup_contactEdit_close).click();
+});
+
+Then('user adds a tag to the conversation',()=>{
+    cy.xpath(inbox_qa_gupshup_addtags).click();
+    cy.xpath(inbox_qa_gupshup_selectTag).click();
+    cy.xpath(inbox_qa_gupshup_selectTag_close).click();
+
+});
+
+Then('user adds the reply click send and the message is displayed in chat window',()=>{
     const agentReply = randomTextFunction("QA Automation UI Agent reply")
     cy.xpath(inbox_qa_gupshup_reply).click({force: true});
     cy.xpath(inbox_qa_gupshup_textarea).type(agentReply);
@@ -131,20 +173,34 @@ And('user adds the reply click send and the message is displayed in chat window'
     cy.xpath(`//p[text()="${agentReply}"]`).length > 0;
 });
 
+Then('user adds the note and click save and the message is displayed in chat window',()=>{
+    const agentNote = randomTextFunction("QA Automation UI Agent Note")
+    cy.xpath(inbox_qa_gupshup_notes).click();
+    cy.xpath(inbox_qa_gupshup_notes_textarea).type(agentNote);
+    cy.xpath(inbox_qa_gupshup_notes_save).click();
+    cy.xpath(`//p[text()="${agentNote}"]`).length > 0;
+});
+
+Then('user selects the template and click save and the message is displayed in chat window',()=>{
+    cy.xpath(inbox_qa_gupshup_template).click();
+    cy.xpath(inbox_qa_gupshup_template_select).click();
+    cy.xpath(inbox_qa_gupshup_send).click();
+    cy.xpath(`//p[text()="Message from UI Automation test"]`).length > 0;
+})
+
 And('User clicks on status {string}',(status)=>{
     cy.xpath(tickets_status_dropdown).click();
     cy.xpath(`//span[text()="${status} "]`).click({force: true});
 });
 
 And('User selects conversation with {string}',(status)=>{
-    cy.xpath(`//span[text()="All"]`).click()
+    cy.xpath(inbox_assigned_all).click()
     cy.xpath(`//span[text()="${status}"]`).click({force: true});
 });
 
 And('User clicks on what new popup', () => {
-    cy.xpath(login_next).click();
-    cy.xpath(login_next).click();
-    cy.xpath(login_gotIt).click();
+    cy.xpath(login_whatsNew_cancel).click();
+    
 });
 
 And('User clicks on setting -> inboxes', () => {
@@ -240,7 +296,7 @@ And('user click on delete agent icon and confirm deletion',()=>{
 });
 And('user cliks on search icon and search for a message and select the conversation',()=>{
     cy.xpath(inbox_search).click();
-    cy.xpath(inbox_search_text).type('Automation');
+    cy.xpath(inbox_search_text).type('Unique');
     cy.xpath(inbox_searched_conversation).click();
 });
 
@@ -323,4 +379,9 @@ Then('conversations with {string} are displayed',(status)=>{
         {cy.url().should('include', `assignee_tab=me`);}
     else 
         {cy.url().should('include', `assignee_tab=${Status1}`);}   
+});
+
+Then('user selects and open previous conversation',()=>{
+    cy.xpath(inbox_qa_gupshup_previousTickets).click();
+    cy.xpath(inbox_qa_gupshup_previousTickets_select).click();
 });

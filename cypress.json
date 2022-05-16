@@ -9,6 +9,7 @@
     },
     "testFiles": "**/*.{feature,features}",
     "retries": 3,
-    "video": false
+    "video": false,
+    "numTestsKeptInMemory": 0
 }
 

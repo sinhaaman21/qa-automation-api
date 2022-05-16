@@ -6,7 +6,7 @@ const account_options = `//span[text()="A"]`;
 const switch_account = `//button[contains(text(),"Switch Account")]`;
 const logout = `//a[contains(text(),"Logout")]`;
 const account_name = `//div[contains(text(),"QA Automation")]`;
-const login_next = `//span[text()="NEXT"]`;
+const login_whatsNew_cancel = `//*[@id="app"]/div[1]/div[2]/div/span/span`;
 const login_gotIt = `//span[text()="GOT IT!"]`;
 const dashboard_settings = `//span[text()="Settings"]`;
 const settings_inboxes = `//div[contains(text(),"Inboxes")]`;
@@ -61,7 +61,7 @@ const tickets_status_dropdown_outbound= `//span[text()="outbound "]`;
 const settings_tickets = `//span[text()="Tickets"]`;
 const inbox_qa_gupshup_stared = `//span[contains(text(),"STARRED")]`;
 const dashboard_inboxes = `//span[contains(text(),"Inboxes")]`;
-const inbox_qa_gupshup = `//div[contains(text(),"gupshup_QA_Automation")]`;
+const inbox_qa_gupshup = `//div[contains(text(),"QA_GE_Automation")]`;
 const inbox_qa_gupshup_reply = `//a[contains(text(),"Reply")]`;
 const inbox_qa_gupshup_textarea = `//textarea[@placeholder="Shift + enter for new line. Start with '/' to select a Canned Response."]`;
 const inbox_qa_gupshup_send = `//span[contains(text(),"Send")]`;
@@ -69,13 +69,43 @@ const inbox_qa_gupshup_message = `//p[text()="hi"]`;
 const inbox_search=`//div[contains(text(),"Search for messages")]`;
 const inbox_search_text=`//input[@placeholder="Type any text to search messages"]`;
 const inbox_searched_conversation = `//*[@id="app"]/div[1]/section/section/div[1]/div[1]/div[2]/div/div[2]/div[2]/div/button[1]`;
-
-
-
-
+const inbox_assigned_all = `//span[text()="All"]`;
+const inbox_qa_gupshup_notes = `//a[contains(text(),"Private Note")]`;
+const inbox_qa_gupshup_template = `//a[contains(text(),"Template")]`;
+const inbox_qa_gupshup_notes_textarea = `//textarea[@placeholder="Shift + enter for new line. This will be visible only to Agents."]`;
+const inbox_qa_gupshup_notes_save = `//*[@id="app"]/div[1]/section/section/div[2]/div/div[2]/div/div[2]/button`;
+const inbox_qa_gupshup_template_select = `//a[contains(text(),"Message from UI Automation test")]`;
+const inbox_qa_gupshup_qa4 = `//span[contains(text(),"QA 4")]`;
+const inbox_qa_gupshup_addtags = `//button[@type="submit" and @name="Add Tags"]`;
+const inbox_qa_gupshup_selectTag = `//*[@id="357"]/div[1]/div/div`;
+const inbox_qa_gupshup_selectTag_close = `//*[@id="app"]/div[1]/section/section/div[3]/div/div[3]/div[2]/div/div[1]/div/span/span`;
+const inbox_qa_gupshup_contactEdit = `//*[@id="app"]/div[1]/section/section/div[3]/div/div[1]/div/div/div[1]/button/span`;
+const inbox_qa_gupshup_contactEdit_email = `//input[@placeholder="Enter the email address of the contact"]`;
+const inbox_qa_gupshup_contactEdit_Bio = `//textarea[@placeholder="Enter the bio of the contact"]`;
+const inbox_qa_gupshup_contactEdit_submit = `//button[@name="Submit"]`;
+const inbox_qa_gupshup_contactEdit_close = `//*[@id="app"]/div[1]/section/section/div[3]/div/div[1]/div/div/div[3]/div/span/span`;
+const inbox_qa_gupshup_previousTickets = `//span[contains(text(),"Previous Tickets")]`;
+const inbox_qa_gupshup_previousTickets_select = `//*[@id="app"]/div[1]/section/section/div[3]/div/div[2]/div[2]/div/div/div/div/div`;
 
 export default {
     logout,
+    inbox_qa_gupshup_previousTickets,
+    inbox_qa_gupshup_previousTickets_select,
+    inbox_qa_gupshup_contactEdit,
+    inbox_qa_gupshup_contactEdit_email,
+    inbox_qa_gupshup_contactEdit_Bio,
+    inbox_qa_gupshup_contactEdit_submit,
+    inbox_qa_gupshup_contactEdit_close,
+    inbox_qa_gupshup_addtags,
+    inbox_qa_gupshup_selectTag,
+    inbox_qa_gupshup_selectTag_close,
+    inbox_qa_gupshup_notes,
+    inbox_qa_gupshup_qa4,
+    inbox_qa_gupshup_template,
+    inbox_qa_gupshup_notes_textarea,
+    inbox_qa_gupshup_notes_save,
+    inbox_qa_gupshup_template_select, 
+    inbox_assigned_all,
     inbox_search,
     inbox_search_text,
     inbox_searched_conversation,
@@ -132,12 +162,11 @@ export default {
     account_options,
     switch_account,
     account_name,
-    login_next,
+    login_whatsNew_cancel,
     login_gotIt,
     dashboard_settings,
     settings_inboxes,
     dashboard_pullBar,
     channel_limechat,
     settings_agents,
-    
 };

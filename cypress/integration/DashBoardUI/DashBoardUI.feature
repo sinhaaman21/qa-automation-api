@@ -10,7 +10,7 @@ Feature: Dashboard UI Flows
             | username          | password   |
             | admin@limechat.ai | wavicle123 |
 
-     Scenario Outline: Login to dashboard on staging negative
+    Scenario Outline: Login to dashboard on staging negative
 
         Given User is at the dashboard login page
         When User enters username as '<username>' and password as '<password>'
@@ -35,7 +35,7 @@ Feature: Dashboard UI Flows
             | admin@limechat.ai | wavicle123 | LimeChat |
 
 
-    
+
 
     Scenario Outline: agent login to dashboard-> Inbox and search for a message
 
@@ -52,9 +52,9 @@ Feature: Dashboard UI Flows
         Then user is navigated to conversation list page
         Examples:
             | username          | password   | accountName   | id |
-            | admin@limechat.ai | wavicle123 | QA Automation | 61 |        
+            | admin@limechat.ai | wavicle123 | QA Automation | 61 |
 
-    Scenario Outline: agent login to dashboard and check different conversations 
+    Scenario Outline: agent login to dashboard and check different conversations
 
         Given User is at the dashboard login page
         When User enters username as '<username>' and password as '<password>'
@@ -66,14 +66,14 @@ Feature: Dashboard UI Flows
         Then User should navigates to Url with id as '<id>'
         And User clicks on inboxes option from sidebar
         And User selects conversation with '<status>'
-        Then conversations with '<status>' are displayed 
+        Then conversations with '<status>' are displayed
         Examples:
-            | username          | password   | accountName   | id |status|
-            | admin@limechat.ai | wavicle123 | QA Automation | 61 |All|         
-            | admin@limechat.ai | wavicle123 | QA Automation | 61 |Unassigned|         
-            | admin@limechat.ai | wavicle123 | QA Automation | 61 |Mine|         
-    
-    Scenario Outline: agent login to dashboard and replies to a conversation 
+            | username          | password   | accountName   | id | status     |
+            | admin@limechat.ai | wavicle123 | QA Automation | 61 | All        |
+            | admin@limechat.ai | wavicle123 | QA Automation | 61 | Unassigned |
+            | admin@limechat.ai | wavicle123 | QA Automation | 61 | Mine       |
+
+    Scenario Outline: agent login to dashboard and add tag to a conversation
 
         Given User is at the dashboard login page
         When User enters username as '<username>' and password as '<password>'
@@ -84,13 +84,103 @@ Feature: Dashboard UI Flows
         And User selects '<accountName>' from the accounts list
         Then User should navigates to Url with id as '<id>'
         And User clicks on inboxes option from sidebar
-        And User selects gupshup_QA_Automation inbox
-        And user selects the conversation to reply
+        And User selects QA_GE_Automation inbox
+        And user selects the conversation QA
+        Then user adds a tag to the conversation
+        Examples:
+            | username          | password   | accountName   | id |
+            | admin@limechat.ai | wavicle123 | QA Automation | 61 |
+
+    Scenario Outline: agent login to dashboard and edit contact info of a conversation
+
+        Given User is at the dashboard login page
+        When User enters username as '<username>' and password as '<password>'
+        And User clicks on login button
+        And User clicks on what new popup
+        And User clicks on account options
+        And User clicks on Switch Account and list of accounts are displayed
+        And User selects '<accountName>' from the accounts list
+        Then User should navigates to Url with id as '<id>'
+        And User clicks on inboxes option from sidebar
+        And User selects QA_GE_Automation inbox
+        And user selects the conversation QA
+        And user clicks on edit contact
+        Then user add details and close
+        Examples:
+            | username          | password   | accountName   | id |
+            | admin@limechat.ai | wavicle123 | QA Automation | 61 |
+
+    Scenario Outline: agent login to dashboard and replies to a conversation
+
+        Given User is at the dashboard login page
+        When User enters username as '<username>' and password as '<password>'
+        And User clicks on login button
+        And User clicks on what new popup
+        And User clicks on account options
+        And User clicks on Switch Account and list of accounts are displayed
+        And User selects '<accountName>' from the accounts list
+        Then User should navigates to Url with id as '<id>'
+        And User clicks on inboxes option from sidebar
+        And User selects QA_GE_Automation inbox
+        And user selects the conversation
+        Then user selects and open previous conversation
+        Examples:
+            | username          | password   | accountName   | id |
+            | admin@limechat.ai | wavicle123 | QA Automation | 61 |
+
+    Scenario Outline: agent login to dashboard and replies to a conversation
+
+        Given User is at the dashboard login page
+        When User enters username as '<username>' and password as '<password>'
+        And User clicks on login button
+        And User clicks on what new popup
+        And User clicks on account options
+        And User clicks on Switch Account and list of accounts are displayed
+        And User selects '<accountName>' from the accounts list
+        Then User should navigates to Url with id as '<id>'
+        And User clicks on inboxes option from sidebar
+        And User selects QA_GE_Automation inbox
+        And user selects the conversation
         Then user adds the reply click send and the message is displayed in chat window
         Examples:
             | username          | password   | accountName   | id |
-            | admin@limechat.ai | wavicle123 | QA Automation | 61 | 
+            | admin@limechat.ai | wavicle123 | QA Automation | 61 |
 
+    Scenario Outline: agent login to dashboard and adds a private note to a conversation
+
+        Given User is at the dashboard login page
+        When User enters username as '<username>' and password as '<password>'
+        And User clicks on login button
+        And User clicks on what new popup
+        And User clicks on account options
+        And User clicks on Switch Account and list of accounts are displayed
+        And User selects '<accountName>' from the accounts list
+        Then User should navigates to Url with id as '<id>'
+        And User clicks on inboxes option from sidebar
+        And User selects QA_GE_Automation inbox
+        And user selects the conversation
+        Then user adds the note and click save and the message is displayed in chat window
+        Examples:
+            | username          | password   | accountName   | id |
+            | admin@limechat.ai | wavicle123 | QA Automation | 61 |
+
+    Scenario Outline: agent login to dashboard and sends template to a conversation
+
+        Given User is at the dashboard login page
+        When User enters username as '<username>' and password as '<password>'
+        And User clicks on login button
+        And User clicks on what new popup
+        And User clicks on account options
+        And User clicks on Switch Account and list of accounts are displayed
+        And User selects '<accountName>' from the accounts list
+        Then User should navigates to Url with id as '<id>'
+        And User clicks on inboxes option from sidebar
+        And User selects QA_GE_Automation inbox
+        And user selects the conversation
+        Then user selects the template and click save and the message is displayed in chat window
+        Examples:
+            | username          | password   | accountName   | id |
+            | admin@limechat.ai | wavicle123 | QA Automation | 61 |
 
 
     Scenario Outline: Login to dashboard on staging and check tickets of different status
@@ -104,15 +194,15 @@ Feature: Dashboard UI Flows
         And User clicks on status '<status>'
         Then list of tickest for required '<status>' is displayed
         Examples:
-            | username          | password   | title    | status|
-            | admin@limechat.ai | wavicle123 | LimeChat | open  |
-            | admin@limechat.ai | wavicle123 | LimeChat | resolved  |
-            | admin@limechat.ai | wavicle123 | LimeChat | followup  |
+            | username          | password   | title    | status   |
+            | admin@limechat.ai | wavicle123 | LimeChat | open     |
+            | admin@limechat.ai | wavicle123 | LimeChat | resolved |
+            | admin@limechat.ai | wavicle123 | LimeChat | followup |
             | admin@limechat.ai | wavicle123 | LimeChat | waiting  |
-            | admin@limechat.ai | wavicle123 | LimeChat | bot  |
-            | admin@limechat.ai | wavicle123 | LimeChat | closed  |
-            | admin@limechat.ai | wavicle123 | LimeChat | outbound  |
-                       
+            | admin@limechat.ai | wavicle123 | LimeChat | bot      |
+            | admin@limechat.ai | wavicle123 | LimeChat | closed   |
+            | admin@limechat.ai | wavicle123 | LimeChat | outbound |
+
 
     Scenario Outline: Login to dashboard on staging and switch account
 
@@ -144,24 +234,6 @@ Feature: Dashboard UI Flows
             | username          | password   | accountName   | id |
             | admin@limechat.ai | wavicle123 | QA Automation | 61 |
 
-    Scenario Outline: Login to dashboard and delete inbox
-
-        Given User is at the dashboard login page
-        When User enters username as '<username>' and password as '<password>'
-        And User clicks on login button
-        And User clicks on what new popup
-        And User clicks on account options
-        And User clicks on Switch Account and list of accounts are displayed
-        And User selects '<accountName>' from the accounts list
-        Then User should navigates to Url with id as '<id>'
-        And User clicks on setting -> inboxes
-        And user click on delete inbox icon and confirm deletion
-        Then user is navigated to inbox list page
-        Examples:
-            | username          | password   | accountName   | id |
-            | admin@limechat.ai | wavicle123 | QA Automation | 61 |
-        
-
     Scenario Outline: Login to dashboard switch account and create inbox
 
         Given User is at the dashboard login page
@@ -184,6 +256,24 @@ Feature: Dashboard UI Flows
         Examples:
             | username          | password   | accountName   | id | channelName | token  | appName | message              |
             | admin@limechat.ai | wavicle123 | QA Automation | 61 | QAChannel   | testQA | QATest  | Your Inbox is ready! |
+
+    Scenario Outline: Login to dashboard and delete inbox
+
+        Given User is at the dashboard login page
+        When User enters username as '<username>' and password as '<password>'
+        And User clicks on login button
+        And User clicks on what new popup
+        And User clicks on account options
+        And User clicks on Switch Account and list of accounts are displayed
+        And User selects '<accountName>' from the accounts list
+        Then User should navigates to Url with id as '<id>'
+        And User clicks on setting -> inboxes
+        And user click on delete inbox icon and confirm deletion
+        Then user is navigated to inbox list page
+        Examples:
+            | username          | password   | accountName   | id |
+            | admin@limechat.ai | wavicle123 | QA Automation | 61 |
+
 
     Scenario Outline: Login to dashboard and navigates to agent list
 
@@ -216,7 +306,7 @@ Feature: Dashboard UI Flows
         Then user is navigated to agent list page
         Examples:
             | username          | password   | accountName   | id |
-            | admin@limechat.ai | wavicle123 | QA Automation | 61 |        
+            | admin@limechat.ai | wavicle123 | QA Automation | 61 |
 
     Scenario Outline: Login to dashboard switch account and create agent
 
@@ -268,7 +358,7 @@ Feature: Dashboard UI Flows
         Then user clicks create tag button and navigates back to tag list
         Examples:
             | username          | password   | accountName   | id |
-            | admin@limechat.ai | wavicle123 | QA Automation | 61 |        
+            | admin@limechat.ai | wavicle123 | QA Automation | 61 |
 
 
     Scenario Outline: Login to dashboard and navigates to Template list
@@ -285,27 +375,9 @@ Feature: Dashboard UI Flows
         Then user is navigated to template list page
         Examples:
             | username          | password   | accountName   | id |
-            | admin@limechat.ai | wavicle123 | QA Automation | 61 |        
+            | admin@limechat.ai | wavicle123 | QA Automation | 61 |
 
-    Scenario Outline: Login to dashboard and delets a Template 
-
-        Given User is at the dashboard login page
-        When User enters username as '<username>' and password as '<password>'
-        And User clicks on login button
-        And User clicks on what new popup
-        And User clicks on account options
-        And User clicks on Switch Account and list of accounts are displayed
-        And User selects '<accountName>' from the accounts list
-        Then User should navigates to Url with id as '<id>'
-        And User clicks on setting -> Template
-        And user click on delete template icon and confirm deletion
-        Then user is navigated to template list page
-        Examples:
-            | username          | password   | accountName   | id |
-            | admin@limechat.ai | wavicle123 | QA Automation | 61 | 
-
-
-    Scenario Outline: Login to dashboard and adds a Template
+   Scenario Outline: Login to dashboard and adds a Template
 
         Given User is at the dashboard login page
         When User enters username as '<username>' and password as '<password>'
@@ -321,7 +393,26 @@ Feature: Dashboard UI Flows
         Then user is navigated to template list page
         Examples:
             | username          | password   | accountName   | id |
-            | admin@limechat.ai | wavicle123 | QA Automation | 61 |          
+            | admin@limechat.ai | wavicle123 | QA Automation | 61 |
 
 
-            
+ 
+    Scenario Outline: Login to dashboard and delets a Template
+
+        Given User is at the dashboard login page
+        When User enters username as '<username>' and password as '<password>'
+        And User clicks on login button
+        And User clicks on what new popup
+        And User clicks on account options
+        And User clicks on Switch Account and list of accounts are displayed
+        And User selects '<accountName>' from the accounts list
+        Then User should navigates to Url with id as '<id>'
+        And User clicks on setting -> Template
+        And user click on delete template icon and confirm deletion
+        Then user is navigated to template list page
+        Examples:
+            | username          | password   | accountName   | id |
+            | admin@limechat.ai | wavicle123 | QA Automation | 61 |
+
+
+  

@@ -19,33 +19,22 @@ function randomNumberFunction(prefix){
     return randomNumber;
 }
 
-function customerSendMessage(message){
+function customerSendMessage(message, mobile){
     cy.request({
         method : 'POST',
-        url : `${host}/whatsapp/gupshup/callback`,
+        url : `${host}/whatsapp/gupshup_enterprise/callback`,
         headers : {
             'api_access_token' : dashboardApiAccessToken
         },
         body : 
         {
-            "app": payload.app,
-            "timestamp": payload.timestamp,
-            "version": payload.version,
-            "type": payload.type,
-            "payload":{
-                "id": payload.payload.id,
-                "source": payload.payload.source,
-                "type": payload.payload.type,
-                "payload":{
-                    "text": message
-                },
-                "sender":{
-                    "phone": payload.payload.sender.phone,
-                    "name": payload.payload.sender.name,
-                    "country_code": payload.payload.sender.country_code,
-                    "dial_code": payload.payload.sender.dial_code
-                }
-            }
+                "waNumber": "917299869181",
+                "mobile": mobile,
+                "name": "Aman Sinha",
+                "replyId": "110330539317519565",
+                "text": message,
+                "type": "text",
+                "timestamp": "1623446483000"
         }
 
     }).then((res)=>{
