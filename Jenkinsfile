@@ -2,6 +2,9 @@ pipeline {
     agent{
         label 'limekit'
     } 
+    options {
+        ansiColor('xterm')
+    }
     tools {
         nodejs 'node'
         allure 'allure'
@@ -10,6 +13,7 @@ pipeline {
     stages {
         stage('Dependencies') {
             steps {
+                slackSend channel: 'jenkins-ci-notifier', color: '#1D8EC1', message: "Build Started: \nProject: ${env.JOB_NAME}  \n Build Number: ${env.BUILD_NUMBER} \n Build URL: ${env.BUILD_URL}"
                 sh 'npm ci'
             }
         }
@@ -39,8 +43,8 @@ pipeline {
         success{
             slackSend channel: 'jenkins-ci-notifier', color: '#22910C', message: "Build Success: \nProject: ${env.JOB_NAME}  \n Build Number: ${env.BUILD_NUMBER} \n Build URL: ${env.BUILD_URL}"
         }
-        failure{
-            slackSend channel: 'jenkins-ci-notifier', color: '#EE3D18', message: "Build Failed: \nProject: ${env.JOB_NAME}  \n Build Number: ${env.BUILD_NUMBER} \n Build URL: ${env.BUILD_URL}"
+        unsuccessful{
+            slackSend channel: 'jenkins-ci-notifier', color: '#EE3D18', message: "Build ${currentBuild.currentResult}: \nProject: ${env.JOB_NAME}  \n Build Number: ${env.BUILD_NUMBER} \n Build URL: ${env.BUILD_URL}"
         }
     }
 }
